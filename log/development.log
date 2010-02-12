@@ -13248,3 +13248,141 @@ Processing SpeechesController#voice (for 127.0.0.1 at 2010-02-12 05:08:00) [GET]
   Parameters: {"id"=>"4b754f5639d10ef9da000006"}
 Sending data speech/voice/4b754f5639d10ef9da000006
 Completed in 9ms (View: 1 | 200 OK [http://localhost/speeches/voice/4b754f5639d10ef9da000006]
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-12 05:20:02) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (42.2ms)
+Completed in 205ms (View: 55 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-12 05:20:16) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (2.4ms)
+Completed in 14ms (View: 8 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-12 05:20:51) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (2.4ms)
+Completed in 10ms (View: 5 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-12 05:20:58) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (2.0ms)
+Completed in 11ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-12 05:21:17) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (1.9ms)
+Completed in 9ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-12 05:21:24) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (2.1ms)
+Completed in 68ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-12 05:21:35) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (1.9ms)
+Completed in 10ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-12 05:21:42) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (1.9ms)
+Completed in 9ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-12 05:21:50) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (2.0ms)
+Completed in 9ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-12 05:21:57) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (2.0ms)
+Completed in 11ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-12 05:22:02) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (1.8ms)
+Completed in 9ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-12 05:22:08) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (2.0ms)
+Completed in 11ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-12 05:22:29) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (1.9ms)
+Completed in 9ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-12 05:23:06) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (1.9ms)
+Completed in 14ms (View: 8 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-12 05:23:24) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (1.9ms)
+Completed in 66ms (View: 7 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-12 05:23:37) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (1.8ms)
+Completed in 13ms (View: 8 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-12 05:24:18) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (2.2ms)
+Completed in 14ms (View: 8 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#create (for 127.0.0.1 at 2010-02-12 05:24:24) [POST]
+  Parameters: {"commit"=>"", "speech"=>{"text"=>"sfsd"}, "authenticity_token"=>"Jc3J7Z1Jfp7GX4amRC5J/V2MCPnn2FekzNKHugKdKc0="}
+Redirected to http://localhost:3000/4b75568839d10efad9000012
+Completed in 310ms | 302 Found [http://localhost/speeches]
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 05:24:25) [GET]
+  Parameters: {"id"=>"4b75568839d10efad9000012"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 16ms (View: 9 | 200 OK [http://localhost/4b75568839d10efad9000012]
+
+
+Processing SpeechesController#voice (for 127.0.0.1 at 2010-02-12 05:24:25) [GET]
+  Parameters: {"id"=>"4b75568839d10efad9000012"}
+Sending data speech/voice/4b75568839d10efad9000012
+Completed in 15ms (View: 1 | 200 OK [http://localhost/speeches/voice/4b75568839d10efad9000012]

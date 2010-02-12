@@ -25,7 +25,7 @@ class SpeechesController < ApplicationController
     
     if @speech.save
       flash[:notice] = "Successfully created speech."
-      redirect_to @speech
+      redirect_to "/#{@speech.id}"
     else
       render :action => 'new'
     end
