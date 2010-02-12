@@ -1,0 +1,35 @@
+<% title "I Just Wanna Say This" %>
+
+<!-- <%= embed_tag voice_path_for(@speech), :class => 'player', :controls => 'VOLUMELEVER'%> -->
+<div id="player" class = "player">
+	<div id="speech">
+		You need to have <%= link_to 'Flash Player', 'http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash' %> installed to display this video
+	</div>
+</div>
+
+<%= javascript_include_tag "swfobject" %>
+<% javascript_tag :defer => 'defer' do -%>
+	var flashvars = {
+		"file": "<%= voice_path_for(@speech) %>",
+		"autostart": "true",
+		"provider": "sound",
+		"bufferlength": "0",
+	};
+	var params = {
+		"allowscriptaccess": "always" 
+	};
+	
+	var attributes = {
+	};
+
+	swfobject.embedSWF("/flash/player.swf", "speech", "300", "24", "9.0.0","expressInstall.swf", flashvars, params, attributes);
+
+<% end-%>
+
+<!-- <p>
+	<%= link_to "Edit", edit_speech_path(@speech) %> |
+	<%= link_to "Destroy", @speech, :confirm => 'Are you sure?', :method => :delete %> |
+	<%= link_to "View All", speeches_path %>
+</p>
+
+-->

@@ -1,0 +1,54 @@
+/* 404 page */
+
+
+#screen-404 #searchform { margin:30px 0 0 0; padding: 0; background: transparent url(images/search.png) no-repeat;}
+
+#screen-404 fieldset.search {
+
+	border: none;
+	width: 454px;
+	height: 89px;
+}
+
+#screen-404 .search input, .search button {
+
+	border: none;
+	float: left;
+
+}
+
+#screen-404 .search input.box {
+
+	color: #99adb4;
+	font-size: 18px;
+	width: 320px;
+	height: 30px;
+	padding: 10px;
+	vertical-align:middle;
+	margin: 25px 0 0 20px;
+	background:none;
+	outline: none;
+
+}
+
+#screen-404 .search input.box:focus {
+
+	background: none;
+	outline: none;
+
+}
+
+#screen-404 .search button {
+	
+	padding: 20px 0 0 13px;
+	font-family: Comic Sans MS;
+	font-size: 24px;
+	font-weight: bold;
+	cursor: pointer;
+	background: none;
+	outline: none;
+	color: #4d4c4c;
+}
+
+
+

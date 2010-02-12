@@ -1,0 +1,124 @@
+body
+{
+	background: #fff url(../images/bg.png) center top repeat-x; /*78aabf*/
+	color: #4d4c4c;
+	font-size: 62.5%;
+	font-family: Comic Sans MS, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#container 
+{ 
+	background: url(../images/pingu.png) no-repeat; 
+	width: 1200px; 
+	height: 658px; 
+	margin: 20px auto 0 0; 
+	padding: 2px; 
+	color: #343434; 
+} 
+
+#container .right
+{
+	float: right;
+	width: 710px;
+}
+
+#container .right .bubble
+{
+	text-align: center;
+	padding: 40px 0 0 55px;
+	width: 250px;
+}
+
+#container span.big
+{
+	font-size: 64px;
+	color: #294053;
+	font-weight: normal;
+}
+
+#container span.small
+{
+	font-size: 25px;
+	color: #294053;
+	font-weight: normal;
+}
+
+#container p.title 
+{ 
+	font-size: 28px; 
+	margin: 160px 0 0 0;  
+	padding: 0;
+}
+
+
+#container p 
+{ 
+	font-size: 14px; 
+	margin: 0;  
+	padding: 20px 0 0 0;
+}
+
+## #container #new_speech { margin:5px 0 0 0; padding: 0; background: transparent url(../images/search.png) no-repeat;}
+
+#container fieldset.search {
+
+	border: none;
+	width: 330px;
+	height: 150px;
+	padding: 0 0 0 10px;
+	margine: 0;
+}
+
+#container .search textarea, .search div {
+
+	border: none;
+	background-color: transparent;
+	width: 330px;
+
+}
+
+#container .search textarea.box {
+
+	color: #99adb4;
+	height: 105px;
+	overflow: auto;
+	resize: none;
+	boarder: none;
+	font-size: 25px;
+	color: #294053;
+	font-weight: normal;
+	font-family: Comic Sans MS, Arial, Helvetica, sans-serif;
+	
+}
+
+#container .search input.box:focus {
+
+}
+
+#container .search div {
+	margin: 70px 0 0 0; 
+}
+
+#container .search input.submit {
+	
+	float: right;
+	padding: 0 0 0 80px;
+	font-size: 30px;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+	background: transparent url(../images/next.png) no-repeat;
+}
+
+#container .search input.submit:hover {
+
+}
+
+#container .player {
+	margin: 50px 0 0 30px;
+	background-color: transparent;
+}
+
+
