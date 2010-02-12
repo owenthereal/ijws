@@ -13386,3 +13386,16 @@ Processing SpeechesController#voice (for 127.0.0.1 at 2010-02-12 05:24:25) [GET]
   Parameters: {"id"=>"4b75568839d10efad9000012"}
 Sending data speech/voice/4b75568839d10efad9000012
 Completed in 15ms (View: 1 | 200 OK [http://localhost/speeches/voice/4b75568839d10efad9000012]
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 05:27:17) [GET]
+  Parameters: {"id"=>"4b75568839d10efad9000012"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 16ms (View: 9 | 200 OK [http://localhost/4b75568839d10efad9000012]
+
+
+Processing SpeechesController#voice (for 127.0.0.1 at 2010-02-12 05:27:18) [GET]
+  Parameters: {"id"=>"4b75568839d10efad9000012"}
+Sending data speech/voice/4b75568839d10efad9000012
+Completed in 11ms (View: 1 | 200 OK [http://localhost/speeches/voice/4b75568839d10efad9000012]
