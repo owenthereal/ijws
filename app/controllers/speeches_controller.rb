@@ -1,6 +1,7 @@
 class SpeechesController < ApplicationController
   def show
     @speech = Speech.find(params[:id])
+    @speech.voice = google_speech(@speech.text)
   end
   
   def voice
@@ -25,7 +26,7 @@ class SpeechesController < ApplicationController
     
     if @speech.save
       flash[:notice] = "Successfully created speech."
-      redirect_to "/#{@speech.id}"
+      redirect_to @speech
     else
       render :action => 'new'
     end

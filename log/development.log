@@ -12703,3 +12703,548 @@ Rendering template within layouts/application
 Rendering speeches/new
 Rendered speeches/_form (13.0ms)
 Completed in 202ms (View: 90, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 04:34:04) [GET]
+  Parameters: {"id"=>"4b74f1e939d10e186d000025"}
+
+NameError (uninitialized class variable @@database_name in MongoMapper):
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper.rb:57:in `database'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:210:in `database'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:225:in `collection'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:298:in `find_one'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:57:in `find'
+  app/controllers/speeches_controller.rb:3:in `show'
+
+Rendered rescues/_trace (94.8ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-12 04:47:23) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (40.6ms)
+Completed in 207ms (View: 55 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#create (for 127.0.0.1 at 2010-02-12 04:47:27) [POST]
+  Parameters: {"commit"=>"", "speech"=>{"text"=>"dfsd\r\n"}, "authenticity_token"=>"Jc3J7Z1Jfp7GX4amRC5J/V2MCPnn2FekzNKHugKdKc0="}
+
+NameError (uninitialized class variable @@database_name in MongoMapper):
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper.rb:57:in `database'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:210:in `database'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:225:in `collection'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:354:in `collection'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:407:in `save_to_collection'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:397:in `create'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/plugins/callbacks.rb:51:in `create'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:392:in `create_or_update'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/plugins/callbacks.rb:43:in `create_or_update'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:364:in `save'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/plugins/dirty.rb:47:in `save'
+  app/controllers/speeches_controller.rb:27:in `create'
+
+Rendered rescues/_trace (90.0ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpeechesController#create (for 127.0.0.1 at 2010-02-12 04:49:42) [POST]
+  Parameters: {"commit"=>"", "speech"=>{"text"=>"dfsd\r\n"}, "authenticity_token"=>"Jc3J7Z1Jfp7GX4amRC5J/V2MCPnn2FekzNKHugKdKc0="}
+
+NameError (uninitialized class variable @@database_name in MongoMapper):
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper.rb:57:in `database'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:210:in `database'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:225:in `collection'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:354:in `collection'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:407:in `save_to_collection'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:397:in `create'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/plugins/callbacks.rb:51:in `create'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:392:in `create_or_update'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/plugins/callbacks.rb:43:in `create_or_update'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:364:in `save'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/plugins/dirty.rb:47:in `save'
+  app/controllers/speeches_controller.rb:27:in `create'
+
+Rendered rescues/_trace (31.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpeechesController#create (for 127.0.0.1 at 2010-02-12 04:50:12) [POST]
+  Parameters: {"commit"=>"", "speech"=>{"text"=>"dfsd\r\n"}, "authenticity_token"=>"Jc3J7Z1Jfp7GX4amRC5J/V2MCPnn2FekzNKHugKdKc0="}
+
+NameError (uninitialized class variable @@database_name in MongoMapper):
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper.rb:57:in `database'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:210:in `database'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:225:in `collection'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:354:in `collection'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:407:in `save_to_collection'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:397:in `create'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/plugins/callbacks.rb:51:in `create'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:392:in `create_or_update'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/plugins/callbacks.rb:43:in `create_or_update'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:364:in `save'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/plugins/dirty.rb:47:in `save'
+  app/controllers/speeches_controller.rb:27:in `create'
+
+Rendered rescues/_trace (93.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpeechesController#create (for 127.0.0.1 at 2010-02-12 04:50:26) [POST]
+  Parameters: {"commit"=>"", "speech"=>{"text"=>"dfsd\r\n"}, "authenticity_token"=>"Jc3J7Z1Jfp7GX4amRC5J/V2MCPnn2FekzNKHugKdKc0="}
+Redirected to http://localhost:3000/4b754e9239d10ef9c7000001
+Completed in 414ms | 302 Found [http://localhost/speeches]
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 04:50:27) [GET]
+  Parameters: {"id"=>"4b754e9239d10ef9c7000001"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 157ms (View: 23 | 200 OK [http://localhost/4b754e9239d10ef9c7000001]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 04:50:27) [GET]
+
+ActionController::RoutingError (No route matches "/voice/4b754e9239d10ef9c7000001" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 04:50:33) [GET]
+  Parameters: {"id"=>"4b754e9239d10ef9c7000001"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 150ms (View: 6 | 200 OK [http://localhost/4b754e9239d10ef9c7000001]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 04:50:33) [GET]
+
+ActionController::RoutingError (No route matches "/voice/4b754e9239d10ef9c7000001" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-12 04:50:37) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (2.7ms)
+Completed in 17ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#create (for 127.0.0.1 at 2010-02-12 04:50:42) [POST]
+  Parameters: {"commit"=>"", "speech"=>{"text"=>"hello world"}, "authenticity_token"=>"Jc3J7Z1Jfp7GX4amRC5J/V2MCPnn2FekzNKHugKdKc0="}
+Redirected to http://localhost:3000/4b754ea239d10ef9c7000005
+Completed in 187ms | 302 Found [http://localhost/speeches]
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 04:50:42) [GET]
+  Parameters: {"id"=>"4b754ea239d10ef9c7000005"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 221ms (View: 6 | 200 OK [http://localhost/4b754ea239d10ef9c7000005]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 04:50:43) [GET]
+
+ActionController::RoutingError (No route matches "/voice/4b754ea239d10ef9c7000005" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 04:51:18) [GET]
+  Parameters: {"id"=>"show4b754ea239d10ef9c7000005"}
+
+Mongo::InvalidObjectID (illegal ObjectID format):
+  mongo (0.18.3) lib/./lib/mongo/types/objectid.rb:110:in `from_string'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/query.rb:69:in `to_criteria'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/query.rb:65:in `each_pair'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/query.rb:65:in `to_criteria'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/query.rb:18:in `criteria'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/query.rb:31:in `to_a'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:348:in `to_query'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:297:in `find_one'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:57:in `find'
+  app/controllers/speeches_controller.rb:3:in `show'
+
+Rendered rescues/_trace (37.4ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 04:51:21) [GET]
+
+ActionController::RoutingError (No route matches "/show/4b754ea239d10ef9c7000005" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 04:52:09) [GET]
+
+ActionController::RoutingError (No route matches "/show/4b754ea239d10ef9c7000005" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 04:52:10) [GET]
+
+ActionController::RoutingError (No route matches "/show/4b754ea239d10ef9c7000005" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 04:52:17) [GET]
+
+ActionController::RoutingError (No route matches "/show/4b754ea239d10ef9c7000005" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 04:52:18) [GET]
+
+ActionController::RoutingError (No route matches "/show/4b754ea239d10ef9c7000005" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 04:52:18) [GET]
+
+ActionController::RoutingError (No route matches "/show/4b754ea239d10ef9c7000005" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 04:52:18) [GET]
+
+ActionController::RoutingError (No route matches "/show/4b754ea239d10ef9c7000005" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 04:52:18) [GET]
+
+ActionController::RoutingError (No route matches "/show/4b754ea239d10ef9c7000005" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 04:53:04) [GET]
+
+ActionController::RoutingError (No route matches "/show/4b754ea239d10ef9c7000005" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 04:53:05) [GET]
+
+ActionController::RoutingError (No route matches "/show/4b754ea239d10ef9c7000005" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 04:53:05) [GET]
+
+ActionController::RoutingError (No route matches "/show/4b754ea239d10ef9c7000005" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 04:53:15) [GET]
+
+ActionController::RoutingError (No route matches "/show/4b754ea239d10ef9c7000005" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-12 04:53:20) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (41.3ms)
+Completed in 206ms (View: 55 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#create (for 127.0.0.1 at 2010-02-12 04:53:21) [POST]
+  Parameters: {"commit"=>"", "speech"=>{"text"=>"sad"}, "authenticity_token"=>"Jc3J7Z1Jfp7GX4amRC5J/V2MCPnn2FekzNKHugKdKc0="}
+Redirected to http://localhost:3000/4b754f4139d10ef9da000002
+Completed in 175ms | 302 Found [http://localhost/speeches]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 04:53:22) [GET]
+
+ActionController::RoutingError (No route matches "/4b754f4139d10ef9da000002" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-12 04:53:40) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (1.9ms)
+Completed in 10ms (View: 4 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#create (for 127.0.0.1 at 2010-02-12 04:53:42) [POST]
+  Parameters: {"commit"=>"", "speech"=>{"text"=>"sad"}, "authenticity_token"=>"Jc3J7Z1Jfp7GX4amRC5J/V2MCPnn2FekzNKHugKdKc0="}
+Redirected to http://localhost:3000/speeches/4b754f5639d10ef9da000006
+Completed in 92ms | 302 Found [http://localhost/speeches]
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 04:53:42) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 82ms (View: 10 | 200 OK [http://localhost/speeches/4b754f5639d10ef9da000006]
+
+
+Processing SpeechesController#voice (for 127.0.0.1 at 2010-02-12 04:53:42) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Sending data speech/voice/4b754f5639d10ef9da000006
+Completed in 12ms (View: 1 | 200 OK [http://localhost/speeches/voice/4b754f5639d10ef9da000006]
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 04:53:56) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 130ms (View: 6 | 200 OK [http://localhost/4b754f5639d10ef9da000006]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 04:53:56) [GET]
+
+ActionController::RoutingError (No route matches "/voice/4b754f5639d10ef9da000006" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 04:53:58) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 75ms (View: 6 | 200 OK [http://localhost/4b754f5639d10ef9da000006]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 04:53:58) [GET]
+
+ActionController::RoutingError (No route matches "/voice/4b754f5639d10ef9da000006" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 04:54:13) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 80ms (View: 6 | 200 OK [http://localhost/speeches/4b754f5639d10ef9da000006]
+
+
+Processing SpeechesController#voice (for 127.0.0.1 at 2010-02-12 04:54:13) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Sending data speech/voice/4b754f5639d10ef9da000006
+Completed in 13ms (View: 1 | 200 OK [http://localhost/speeches/voice/4b754f5639d10ef9da000006]
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 04:55:18) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 220ms (View: 8 | 200 OK [http://localhost/4b754f5639d10ef9da000006]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 04:55:18) [GET]
+
+ActionController::RoutingError (No route matches "/voice/4b754f5639d10ef9da000006" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 04:55:19) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 139ms (View: 6 | 200 OK [http://localhost/4b754f5639d10ef9da000006]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 04:55:20) [GET]
+
+ActionController::RoutingError (No route matches "/voice/4b754f5639d10ef9da000006" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 04:57:00) [GET]
+
+ActionController::RoutingError (No route matches "/4b754f5639d10ef9da000006" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 05:01:10) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 349ms (View: 54 | 200 OK [http://localhost/4b754f5639d10ef9da000006]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 05:01:11) [GET]
+
+ActionController::RoutingError (No route matches "/voice/4b754f5639d10ef9da000006" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 05:03:50) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 127ms (View: 7 | 200 OK [http://localhost/4b754f5639d10ef9da000006]
+
+
+Processing SpeechesController#voice (for 127.0.0.1 at 2010-02-12 05:03:50) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Sending data speech/voice/4b754f5639d10ef9da000006
+Completed in 12ms (View: 1 | 200 OK [http://localhost/speeches/voice/4b754f5639d10ef9da000006]
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 05:05:55) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 129ms (View: 6 | 200 OK [http://localhost/speeches/4b754f5639d10ef9da000006]
+
+
+Processing SpeechesController#voice (for 127.0.0.1 at 2010-02-12 05:05:55) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Sending data speech/voice/4b754f5639d10ef9da000006
+Completed in 24ms (View: 1 | 200 OK [http://localhost/speeches/voice/4b754f5639d10ef9da000006]
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 05:06:00) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 128ms (View: 6 | 200 OK [http://localhost/4b754f5639d10ef9da000006]
+
+
+Processing SpeechesController#voice (for 127.0.0.1 at 2010-02-12 05:06:01) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Sending data speech/voice/4b754f5639d10ef9da000006
+Completed in 10ms (View: 1 | 200 OK [http://localhost/speeches/voice/4b754f5639d10ef9da000006]
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 05:06:37) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 129ms (View: 8 | 200 OK [http://localhost/4b754f5639d10ef9da000006]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 05:06:37) [GET]
+
+ActionController::RoutingError (No route matches "/speeches/voice/4b754f5639d10ef9da000006" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 05:06:42) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 123ms (View: 6 | 200 OK [http://localhost/4b754f5639d10ef9da000006]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 05:06:42) [GET]
+
+ActionController::RoutingError (No route matches "/speeches/voice/4b754f5639d10ef9da000006" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 05:06:52) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 330ms (View: 53 | 200 OK [http://localhost/4b754f5639d10ef9da000006]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 05:06:53) [GET]
+
+ActionController::RoutingError (No route matches "/speeches/voice/4b754f5639d10ef9da000006" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 05:06:56) [GET]
+
+ActionController::RoutingError (No route matches "/speechs/4b754f5639d10ef9da000006" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 05:06:58) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 125ms (View: 7 | 200 OK [http://localhost/4b754f5639d10ef9da000006]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 05:06:59) [GET]
+
+ActionController::RoutingError (No route matches "/speeches/voice/4b754f5639d10ef9da000006" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 05:07:53) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 144ms (View: 7 | 200 OK [http://localhost/4b754f5639d10ef9da000006]
+
+
+Processing SpeechesController#voice (for 127.0.0.1 at 2010-02-12 05:07:54) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Sending data speech/voice/4b754f5639d10ef9da000006
+Completed in 13ms (View: 1 | 200 OK [http://localhost/speeches/voice/4b754f5639d10ef9da000006]
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-12 05:07:59) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 186ms (View: 6 | 200 OK [http://localhost/speeches/4b754f5639d10ef9da000006]
+
+
+Processing SpeechesController#voice (for 127.0.0.1 at 2010-02-12 05:08:00) [GET]
+  Parameters: {"id"=>"4b754f5639d10ef9da000006"}
+Sending data speech/voice/4b754f5639d10ef9da000006
+Completed in 9ms (View: 1 | 200 OK [http://localhost/speeches/voice/4b754f5639d10ef9da000006]

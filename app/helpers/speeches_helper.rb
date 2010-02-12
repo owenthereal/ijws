@@ -18,6 +18,6 @@ module SpeechesHelper
   end
   
   def voice_path_for(speech)
-    "voice/#{speech.id}"
+    "/speeches/voice/#{speech.id}"
   end
 end
