@@ -12696,3 +12696,10 @@ Rendering template within layouts/application
 Rendering speeches/new
 Rendered speeches/_form (2.1ms)
 Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-12 03:42:21) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (13.0ms)
+Completed in 202ms (View: 90, DB: 0) | 200 OK [http://localhost/]
