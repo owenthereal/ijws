@@ -1,7 +1,6 @@
 class SpeechesController < ApplicationController
   def show
     @speech = Speech.find(params[:id])
-    @speech.voice = google_speech(@speech.text)
   end
   
   def voice
