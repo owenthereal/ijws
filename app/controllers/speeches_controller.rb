@@ -14,14 +14,14 @@ class SpeechesController < ApplicationController
   
   def google_speech(text)
     url = "http://translate.google.com/translate_tts?tl=en&q=#{text.gsub(/\s+/, '+')}"
-    open(url) 
+    open(url)
   end
   
   def create
     @speech = Speech.new(params[:speech])
     @speech.created_date = Time.new
     @speech.remote_ip = request.remote_ip
-    @speech.voice = google_speech(@speech.text)
+    @speech.voice = google_speech(@speech.text) if @speech.valid?
     
     if @speech.save
       flash[:notice] = "Successfully created speech."
