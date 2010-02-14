@@ -27,9 +27,13 @@ set :deploy_via, :remote_cache
 # these http://github.com/rails/irs_process_scripts
 
 namespace :deploy do
-  task :start do ; end
-  task :stop do ; end
+  task :start, :roles => :app do
+    invoke_command "#{deploy_to}/bin/start"
+  end
+  task :stop, :roles => :app do 
+    invoke_command "#{deploy_to}/bin/stop"
+  end
   task :restart, :roles => :app, :except => { :no_release => true } do
-    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+    invoke_command "#{deploy_to}/bin/restart"
   end
 end

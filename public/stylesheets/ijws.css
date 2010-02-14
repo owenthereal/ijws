@@ -130,8 +130,7 @@ body
 }
 
 #container .urlForm .link{
-/*	vertical-align: bottom; 
-	line-height: 2em*/
+	width: 295px;
 }
 
 #errorExplanation {

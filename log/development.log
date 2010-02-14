@@ -18398,3 +18398,68 @@ Rendering template within layouts/application
 Rendering speeches/new
 Rendered speeches/_form (2.0ms)
 Completed in 11ms (View: 5 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-13 17:07:09) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (51.3ms)
+Completed in 257ms (View: 67 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#create (for 127.0.0.1 at 2010-02-13 17:07:11) [POST]
+  Parameters: {"commit"=>"", "speech"=>{"text"=>"sadfad"}, "authenticity_token"=>"LiZcP9j/vH3+J3KQgrMSpkATDfHugl5Iwk3YZug0ja4="}
+Redirected to http://localhost:3000/4b774cbf39d10e1757000002
+Completed in 232ms | 302 Found [http://localhost/speeches]
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-13 17:07:11) [GET]
+  Parameters: {"id"=>"4b774cbf39d10e1757000002"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 69ms (View: 7 | 200 OK [http://localhost/4b774cbf39d10e1757000002]
+
+
+Processing SpeechesController#voice (for 127.0.0.1 at 2010-02-13 17:07:12) [GET]
+  Parameters: {"id"=>"4b774cbf39d10e1757000002"}
+Sending data speech/voice/4b774cbf39d10e1757000002
+Completed in 10ms (View: 1 | 200 OK [http://localhost/speeches/voice/4b774cbf39d10e1757000002]
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-13 17:07:37) [GET]
+  Parameters: {"id"=>"4b774cbf39d10e1757000002"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 10ms (View: 3 | 200 OK [http://localhost/4b774cbf39d10e1757000002]
+
+
+Processing SpeechesController#voice (for 127.0.0.1 at 2010-02-13 17:07:38) [GET]
+  Parameters: {"id"=>"4b774cbf39d10e1757000002"}
+Sending data speech/voice/4b774cbf39d10e1757000002
+Completed in 10ms (View: 1 | 200 OK [http://localhost/speeches/voice/4b774cbf39d10e1757000002]
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-13 17:07:52) [GET]
+  Parameters: {"id"=>"4b774cbf39d10e1757000002"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 10ms (View: 3 | 200 OK [http://localhost/4b774cbf39d10e1757000002]
+
+
+Processing SpeechesController#voice (for 127.0.0.1 at 2010-02-13 17:07:53) [GET]
+  Parameters: {"id"=>"4b774cbf39d10e1757000002"}
+Sending data speech/voice/4b774cbf39d10e1757000002
+Completed in 9ms (View: 0 | 200 OK [http://localhost/speeches/voice/4b774cbf39d10e1757000002]
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-13 17:08:03) [GET]
+  Parameters: {"id"=>"4b774cbf39d10e1757000002"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 13ms (View: 7 | 200 OK [http://localhost/4b774cbf39d10e1757000002]
+
+
+Processing SpeechesController#voice (for 127.0.0.1 at 2010-02-13 17:08:04) [GET]
+  Parameters: {"id"=>"4b774cbf39d10e1757000002"}
+Sending data speech/voice/4b774cbf39d10e1757000002
+Completed in 11ms (View: 1 | 200 OK [http://localhost/speeches/voice/4b774cbf39d10e1757000002]
