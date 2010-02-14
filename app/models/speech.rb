@@ -9,4 +9,15 @@ class Speech
   key :remote_ip, String, :required => true
   
   has_grid_attachment :voice
+  
+  validate :valid_text?
+  
+  private 
+  
+  def valid_text?
+    unless self.text.length < 100
+      errors.add(:text, "must have at most 100 words.")
+    end
+  end
+  
 end

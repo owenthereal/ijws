@@ -66,7 +66,6 @@ body
 
 	border: none;
 	width: 330px;
-	height: 150px;
 	padding: 0 0 0 10px;
 	margine: 0;
 }
@@ -83,14 +82,14 @@ body
 
 	color: #99adb4;
 	height: 105px;
-	overflow: auto;
+	overflow: hidden;
 	resize: none;
 	boarder: none;
 	font-size: 25px;
 	color: #294053;
 	font-weight: normal;
 	font-family: Comic Sans MS, Arial, Helvetica, sans-serif;
-	
+
 }
 
 #container .search input.box:focus {
@@ -107,7 +106,7 @@ body
 
 
 #container .search input.submit {
-	
+
 	float: right;
 	padding: 0 0 0 80px;
 	font-size: 30px;
@@ -126,4 +125,26 @@ body
 	background-color: transparent;
 }
 
+#container .urlForm {
+	padding: 120px 0 0 0;
+}
+
+#container .urlForm .link{
+/*	vertical-align: bottom; 
+	line-height: 2em*/
+}
+
+#errorExplanation {
+	padding: 2px 0 0 10px;
+	font-size: 12px;
+	color: #CF0000;;
+}
+
+#container div.recentSpeeches {
+	width: 330px;
+}
+
+#container span.speech_text{
+	font-size: 12px;
+}
 

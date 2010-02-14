@@ -31,24 +31,24 @@ class SpeechesController < ApplicationController
     end
   end
   
-  def edit
-    @speech = Speech.find(params[:id])
-  end
-  
-  def update
-    @speech = Speech.find(params[:id])
-    if @speech.update_attributes(params[:speech])
-      flash[:notice] = "Successfully updated speech."
-      redirect_to "/#{@speech.id}"
-    else
-      render :action => 'edit'
-    end
-  end
-  
-  def destroy
-    @speech = Speech.find(params[:id])
-    @speech.destroy
-    flash[:notice] = "Successfully destroyed speech."
-    redirect_to speeches_url
-  end
+  # def edit
+  #    @speech = Speech.find(params[:id])
+  #  end
+  #  
+  #  def update
+  #    @speech = Speech.find(params[:id])
+  #    if @speech.update_attributes(params[:speech])
+  #      flash[:notice] = "Successfully updated speech."
+  #      redirect_to "/#{@speech.id}"
+  #    else
+  #      render :action => 'edit'
+  #    end
+  #  end
+  #  
+  #  def destroy
+  #    @speech = Speech.find(params[:id])
+  #    @speech.destroy
+  #    flash[:notice] = "Successfully destroyed speech."
+  #    redirect_to speeches_url
+  #  end
 end

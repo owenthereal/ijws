@@ -1,13 +1,12 @@
 <% form_for @speech do |f| %>
 	<% field_set_tag nil, :class => 'search' do %>  
 		<%= f.text_area :text, :class => 'box', :cols => 40, :rows => 2 %>
+		<%= javascript_tag "$('speech_text').focus()" %>
 		
 		<% content_tag :div do -%>
 			<%= submit_tag '', :class => 'submit' %>	
 		<% end -%>
 		
-		<%= javascript_tag "$('speech_text').focus()" %>
-		
-		<%= f.error_messages%>
+		<%= f.error_messages :header_message => nil, :message => nil %>		
 	<% end %>
 <% end %>

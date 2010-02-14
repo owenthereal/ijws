@@ -1,0 +1,11 @@
+<div class="recentSpeeches">
+	<span class="small">Recent Speeches</span><br/>
+	<% recent_speeches().each do |speech|-%>
+	<span class="speech_text">
+		<%= link_to speech.text, speech %>
+	</span>
+	<br/>
+	<%=h speech.created_date %>
+	<br/>	
+	<% end-%>
+</div>
