@@ -1,2 +1,2 @@
 DD_belatedPNG.fix
-('#screen-404, #searchform');
+('#screen-404, #search');

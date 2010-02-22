@@ -3,40 +3,43 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title><%= h(yield(:title) || "Untitled") %></title>
+	<%= auto_discovery_link_tag('image/x-icon', 'images/pingu_icon.png', :rel => 'shortcut icon') %>
 	<%= stylesheet_link_tag 'ijws', :media => 'screen'%>
 	<!--[if lt IE 7]><%= stylesheet_link_tag 'ie' %><![endif]-->
 	<!--[if lt IE 8]><%= stylesheet_link_tag 'ie8' %><![endif]-->
-	<!--[if lt IE]>
+	<!--[if IE]>
 	<%= javascript_include_tag 'DD_belatedPNG_0.0.7a.js' %>
 	<%= javascript_include_tag 'png_fix_elements.js' %>
 	<![endif]-->
-	<%= javascript_include_tag "prototype" %>
+	<!-- <%= javascript_include_tag 'prototype' %> -->
 	<!-- Google Analytic Start-->
 	<script type="text/javascript">
-		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-		</script>
-		<script type="text/javascript">
-		try {
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
 		var pageTracker = _gat._getTracker("UA-3828325-6");
 		pageTracker._setDomainName(".ijws.it");
 		pageTracker._trackPageview();
 		} catch(err) {}
-	</script>
-	<!-- Google Analytic End -->
-</head>
+		</script>
+		<!-- Google Analytic End -->
+	</head>
 
-<body>
-	<div id="container">
-		<div class="right">
-			<p class="bubble">
-				<span class="small">I just wanna say...</span>	
-			</p>
-			<%= yield %>
+	<body>
+		<div id="container">
+			<div class="right">	
+				<%= yield %>
+			</div>
+
 		</div>
-
-	</div>
-	<hr/>
-	<center><span class="small">© 2010 ijws.it Beta.&nbsp;Follow <a href="http://twitter.com/JingwenOwenOu">@JingwenOwenOu</a> for more info.</span></center>
-</body>
-</html>
+		<hr/>
+		<center>
+			<span class="small">
+				© 2010 ijws.it Beta.<br/>
+				Created by <a href="http://twitter.com/JingwenOwenOu">@JingwenOwenOu</a>.
+			</span>
+		</center>
+	</body>
+	</html>

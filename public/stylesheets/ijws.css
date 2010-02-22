@@ -66,8 +66,7 @@ body
 
 	border: none;
 	width: 330px;
-	padding: 0 0 0 10px;
-	margine: 0;
+	padding: 70px 0 0 10px;
 }
 
 #container .search textarea, .search div {
@@ -85,10 +84,14 @@ body
 	overflow: hidden;
 	resize: none;
 	boarder: none;
-	font-size: 25px;
+	/*	font-size: 25px;*/
 	color: #294053;
 	font-weight: normal;
-	font-family: Comic Sans MS, Arial, Helvetica, sans-serif;
+	/*	font-family: Comic Sans MS, Arial, Helvetica, sans-serif;*/
+
+	font-family:'Lucida Grande',sans-serif;
+	/*	overflow:auto;*/
+	font-size:14px;
 
 }
 
@@ -116,12 +119,58 @@ body
 	background: transparent url(../images/next.png) no-repeat;
 }
 
+.counter{
+	color:#CCCCCC;
+	float:right;
+	font-family:Georgia,serif;
+	font-size:32px;
+	font-weight:bold;
+	height:40px;
+	overflow:hidden;
+	padding: 0 310px 0 0;
+}
+
+#counter.error {color:#D40D12;}
+
+#counter.warning {color:#5C0002;}
+
+.submitButton{
+	color:#666666;
+	font-size:14px;
+	height:32px;
+	width:115px;
+
+	-moz-border-radius:6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius:6px;
+
+	border:1px solid #cccccc;
+	background:url(../images/button_bg.gif) repeat-x #f5f5f5;
+
+	cursor:pointer;
+	float:right;
+}
+
+.submitButton:disabled, .submitButton:disabled:hover{
+	background:#f5f5f5;
+	border:1px solid #eeeeee;
+	color:#aaaaaa;
+	cursor:auto;
+}
+
+.submitButton:hover{
+	background-position:bottom;
+	border-color:#dddddd;
+	color:#333333;
+}
+
 #container .search input.submit:hover {
 
 }
 
 #container .player {
-	margin: 50px 0 0 30px;
+	margin: 35px 0 0 30px;
 	background-color: transparent;
 }
 
@@ -134,8 +183,8 @@ body
 }
 
 #errorExplanation {
-	padding: 2px 0 0 10px;
-	font-size: 12px;
+	padding: 1px 0 0 30px;
+	font-size: 10px;
 	color: #CF0000;;
 }
 

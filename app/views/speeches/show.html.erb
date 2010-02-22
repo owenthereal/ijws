@@ -1,5 +1,8 @@
 <% title "I Just Wanna Say..." %>
 
+<p class="bubble">
+	<span class="small">I just wanna say...</span>	
+</p>
 <!-- <%= embed_tag voice_path_for(@speech), :class => 'player', :controls => 'VOLUMELEVER'%> -->
 <div id="player" class="player">
 	<div id="speech">
@@ -12,36 +15,36 @@
 
 <%= javascript_include_tag "swfobject" %>
 <% javascript_tag :defer => 'defer' do -%>
-	var flashvars = {
-		"file": "<%= voice_path_for(@speech) %>",
-		"autostart": "true",
-		"provider": "sound",
-		"bufferlength": "0",
-	};
-	var params = {
-		"allowscriptaccess": "always" 
-	};
+var flashvars = {
+	"file": "<%= voice_path_for(@speech) %>",
+	"autostart": "true",
+	"provider": "sound",
+	"bufferlength": "0",
+};
+var params = {
+	"allowscriptaccess": "always" 
+};
 
-	var attributes = {
-	};
+var attributes = {
+};
 
-	swfobject.embedSWF("/flash/player.swf", 
-					   "speech", 
-					   "300", 
-					   "24", 
-					   "9.0.0",
-					   "expressInstall.swf", 
-					   flashvars, 
-					   params, 
-					   attributes
-					  );
+swfobject.embedSWF("/flash/player.swf", 
+"speech", 
+"300", 
+"24", 
+"9.0.0",
+"expressInstall.swf", 
+flashvars, 
+params, 
+attributes
+);
 <% end-%>
 
 <% javascript_tag do -%>
-	function SelectAll(id)
-	{
-	    document.getElementById(id).focus();
-	    document.getElementById(id).select();
-	}
+function SelectAll(id)
+{
+	document.getElementById(id).focus();
+	document.getElementById(id).select();
+}
 <% end -%>
 

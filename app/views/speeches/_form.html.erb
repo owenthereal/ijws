@@ -1,12 +1,16 @@
+<span id='counter', class="counter"><%= @count %></span>
 <% form_for @speech do |f| %>
 	<% field_set_tag nil, :class => 'search' do %>  
 		<%= f.text_area :text, :class => 'box', :cols => 40, :rows => 2 %>
-		<%= javascript_tag "$('speech_text').focus()" %>
 		
 		<% content_tag :div do -%>
-			<%= submit_tag '', :class => 'submit' %>	
+			<%= submit_tag 'say', :id => 'submitButton', :class => 'submitButton' %>
 		<% end -%>
 		
 		<%= f.error_messages :header_message => nil, :message => nil %>		
 	<% end %>
 <% end %>
+
+<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" %>
+<%= javascript_include_tag 'charCounter.js' %>
+<%= javascript_tag " $(document).ready(function(){$('#speech_text').charCounter({});$('#speech_text').focus();});" -%>
