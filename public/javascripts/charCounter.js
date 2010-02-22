@@ -29,9 +29,9 @@
 					.toggleClass(options.warningClass, charCount >= warningChars && charCount < errorChars);
 				
 				if(charCount == 0 || charCount > maxChars) {
-					$("#" + options.submitButtonId).attr("disabled", "disabled").addClass("inact");
+					$("#" + options.submitButtonId).attr("disabled", "disabled");
 				}else {
-					$("#" + options.submitButtonId).removeAttr("disabled").removeClass("inact");
+					$("#" + options.submitButtonId).removeAttr("disabled");
 				}
 					
 			}).change();

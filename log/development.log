@@ -20520,3 +20520,136 @@ Rendering template within layouts/application
 Rendering speeches/new
 Rendered speeches/_form (4.5ms)
 Completed in 15ms (View: 10 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#create (for 127.0.0.1 at 2010-02-22 03:17:40) [POST]
+  Parameters: {"commit"=>"say", "speech"=>{"text"=>"asdfasdfasdf\r\nsa\r\nfds\r\nf\r\nsadf\r\nasdf\r\nasd\r\nfsad\r\nfsa\r\ndf\r\nasdf\r\nsad\r\nfasd\r\nf\r\nasdf\r\nsad\r\nfsad\r\nf\r\nsadf\r\nsadf\r\nsad\r\nf\r\nasdf"}, "authenticity_token"=>"kO/GIBK7MaQc0T27PctG7KDC2D5eSjP40J928+GvC0Y="}
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (3.5ms)
+Completed in 15ms (View: 8 | 200 OK [http://localhost/speeches]
+
+
+Processing SpeechesController#create (for 127.0.0.1 at 2010-02-22 03:18:57) [POST]
+  Parameters: {"commit"=>"say", "speech"=>{"text"=>"asdfasdfasdf\r\nsa\r\nfds\r\nf\r\nsadf\r\nasdf\r\nasd\r\nfsad\r\nfsa\r\ndf\r\nasdf\r\nsad\r\nfasd\r\nf\r\nasdf\r\nsad\r\nfsad\r\nf\r\nsadf\r\nsadf\r\nsad\r\nf\r\nasdf"}, "authenticity_token"=>"kO/GIBK7MaQc0T27PctG7KDC2D5eSjP40J928+GvC0Y="}
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (2.6ms)
+Completed in 11ms (View: 5 | 200 OK [http://localhost/speeches]
+
+
+Processing SpeechesController#create (for 127.0.0.1 at 2010-02-22 03:18:58) [POST]
+  Parameters: {"commit"=>"say", "speech"=>{"text"=>"asdfasdfasdf\r\nsa\r\nfds\r\nf\r\nsadf\r\nasdf\r\nasd\r\nfsad\r\nfsa\r\ndf\r\nasdf\r\nsad\r\nfasd\r\nf\r\nasdf\r\nsad\r\nfsad\r\nf\r\nsadf\r\nsadf\r\nsad\r\nf\r\nasdf"}, "authenticity_token"=>"kO/GIBK7MaQc0T27PctG7KDC2D5eSjP40J928+GvC0Y="}
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (2.5ms)
+Completed in 11ms (View: 5 | 200 OK [http://localhost/speeches]
+
+
+Processing SpeechesController#create (for 127.0.0.1 at 2010-02-22 03:19:00) [POST]
+  Parameters: {"commit"=>"say", "speech"=>{"text"=>"asdfasdfasdf\r\nsa\r\nfds\r\nf\r\nsadf\r\nasdf\r\nasd\r\nfsad\r\nfsa\r\ndf\r\nasdf\r\nsad\r\nfasd\r\nf\r\nasdf\r\nsad\r\nfsad\r\nf\r\nsadf\r\nsadf\r\nsad\r\nf\r\nasdf"}, "authenticity_token"=>"kO/GIBK7MaQc0T27PctG7KDC2D5eSjP40J928+GvC0Y="}
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (2.7ms)
+Completed in 106ms (View: 5 | 200 OK [http://localhost/speeches]
+
+
+Processing SpeechesController#create (for 127.0.0.1 at 2010-02-22 03:19:02) [POST]
+  Parameters: {"commit"=>"say", "speech"=>{"text"=>"asdfasdfasdf\r\nsa\r\nfds\r\nf\r\nsadf\r\nasdf\r\nasd\r\nfsad\r\nfsa\r\ndf\r\nasdf\r\nsad\r\nfasd\r\nf\r\nasdf\r\nsad\r\nfsad\r\nf\r\nsadf\r\nsadf\r\nsad\r\nf\r\nasdf"}, "authenticity_token"=>"kO/GIBK7MaQc0T27PctG7KDC2D5eSjP40J928+GvC0Y="}
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (2.7ms)
+Completed in 11ms (View: 5 | 200 OK [http://localhost/speeches]
+
+
+Processing SpeechesController#create (for 127.0.0.1 at 2010-02-22 03:19:05) [POST]
+  Parameters: {"commit"=>"say", "speech"=>{"text"=>"asdfasdfasdf\r\nsa\r\nfds\r\nf\r\nsadf\r\nasdf\r\nasd\r\nfsad\r\nfsa\r\ndf\r\nasdf\r\nsad\r\nfasd\r\nf\r\nasdf\r\nsad\r\nfsad\r\nf\r\nsadf\r\nsadf\r\nsad\r\nf\r\nasdf"}, "authenticity_token"=>"kO/GIBK7MaQc0T27PctG7KDC2D5eSjP40J928+GvC0Y="}
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (2.9ms)
+Completed in 14ms (View: 5 | 200 OK [http://localhost/speeches]
+
+
+Processing SpeechesController#create (for 127.0.0.1 at 2010-02-22 03:19:06) [POST]
+  Parameters: {"commit"=>"say", "speech"=>{"text"=>"asdfasdfasdf\r\nsa\r\nfds\r\nf\r\nsadf\r\nasdf\r\nasd\r\nfsad\r\nfsa\r\ndf\r\nasdf\r\nsad\r\nfasd\r\nf\r\nasdf\r\nsad\r\nfsad\r\nf\r\nsadf\r\nsadf\r\nsad\r\nf\r\nasdf"}, "authenticity_token"=>"kO/GIBK7MaQc0T27PctG7KDC2D5eSjP40J928+GvC0Y="}
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (2.8ms)
+Completed in 12ms (View: 5 | 200 OK [http://localhost/speeches]
+
+
+Processing SpeechesController#create (for 127.0.0.1 at 2010-02-22 03:19:10) [POST]
+  Parameters: {"commit"=>"say", "speech"=>{"text"=>"asdfasdfasdf\r\nsa\r\nfds\r\nf\r\nsadf\r\na\r\nasd\r\nfsad\r\nfsa\r\ndf\r\nasdf\r\nsad\r\nfasd\r\nf\r\nasdf\r\nsad\r\nfsad\r\nf\r\nsadf\r\nsadf\r\nsad\r\nf\r\nasdf"}, "authenticity_token"=>"kO/GIBK7MaQc0T27PctG7KDC2D5eSjP40J928+GvC0Y="}
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (2.9ms)
+Completed in 11ms (View: 5 | 200 OK [http://localhost/speeches]
+
+
+Processing SpeechesController#new (for 127.0.0.1 at 2010-02-22 03:19:41) [GET]
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (45.1ms)
+Completed in 221ms (View: 61 | 200 OK [http://localhost/]
+
+
+Processing SpeechesController#create (for 127.0.0.1 at 2010-02-22 03:19:49) [POST]
+  Parameters: {"commit"=>"say", "speech"=>{"text"=>"asdfasdf\r\nasdf\r\nasd\r\nfs\r\ndaf\r\nasdf\r\nsad\r\nfasd\r\nf\r\nadsf\r\nasd\r\nfads\r\nf\r\nasdf\r\nasd\r\nfsad\r\nfsa\r\ndf\r\nasdf\r\nasdf\r\nsad\r\nf\r\nasdfff"}, "authenticity_token"=>"kO/GIBK7MaQc0T27PctG7KDC2D5eSjP40J928+GvC0Y="}
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (2.7ms)
+Completed in 157ms (View: 5 | 200 OK [http://localhost/speeches]
+
+
+Processing SpeechesController#create (for 127.0.0.1 at 2010-02-22 03:21:06) [POST]
+  Parameters: {"commit"=>"say", "speech"=>{"text"=>"asdfasdf\r\nasdf\r\nasd\r\nfs\r\ndaf\r\nasdf\r\nsad\r\nfasd\r\nf\r\nadsf\r\nasd\r\nfads\r\nf\r\nasdf\r\nasd\r\nfsad\r\nfsa\r\ndf\r\nasdf\r\nasdf\r\nsad\r\nf\r\nasdfff"}, "authenticity_token"=>"kO/GIBK7MaQc0T27PctG7KDC2D5eSjP40J928+GvC0Y="}
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (2.7ms)
+Completed in 12ms (View: 5 | 200 OK [http://localhost/speeches]
+
+
+Processing SpeechesController#create (for 127.0.0.1 at 2010-02-22 03:21:07) [POST]
+  Parameters: {"commit"=>"say", "speech"=>{"text"=>"asdfasdf\r\nasdf\r\nasd\r\nfs\r\ndaf\r\nasdf\r\nsad\r\nfasd\r\nf\r\nadsf\r\nasd\r\nfads\r\nf\r\nasdf\r\nasd\r\nfsad\r\nfsa\r\ndf\r\nasdf\r\nasdf\r\nsad\r\nf\r\nasdfff"}, "authenticity_token"=>"kO/GIBK7MaQc0T27PctG7KDC2D5eSjP40J928+GvC0Y="}
+Rendering template within layouts/application
+Rendering speeches/new
+Rendered speeches/_form (2.7ms)
+Completed in 12ms (View: 5 | 200 OK [http://localhost/speeches]
+
+
+Processing SpeechesController#create (for 127.0.0.1 at 2010-02-22 03:21:36) [POST]
+  Parameters: {"commit"=>"say", "speech"=>{"text"=>"asdfasdf\r\nasdf\r\nasd\r\nfs\r\ndaf\r\nasdf\r\nsad\r\nfasd\r\nf\r\nadsf\r\nasd\r\nfads\r\nf\r\nasdf\r\nasd\r\nfsad\r\nfsa\r\ndf\r\nasdf\r\nasdf\r\nsad\r\nf\r\nasdfff"}, "authenticity_token"=>"kO/GIBK7MaQc0T27PctG7KDC2D5eSjP40J928+GvC0Y="}
+Redirected to http://localhost:3000/4b8268c039d10e3eea000005
+Completed in 540ms | 302 Found [http://localhost/speeches]
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-22 03:21:36) [GET]
+  Parameters: {"id"=>"4b8268c039d10e3eea000005"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 14ms (View: 7 | 200 OK [http://localhost/4b8268c039d10e3eea000005]
+
+
+Processing SpeechesController#voice (for 127.0.0.1 at 2010-02-22 03:21:37) [GET]
+  Parameters: {"id"=>"4b8268c039d10e3eea000005"}
+Sending data speech/voice/4b8268c039d10e3eea000005
+Completed in 23ms (View: 1 | 200 OK [http://localhost/speeches/voice/4b8268c039d10e3eea000005]
+
+
+Processing SpeechesController#create (for 127.0.0.1 at 2010-02-22 03:22:45) [POST]
+  Parameters: {"commit"=>"say", "speech"=>{"text"=>"asdfasdf\r\nasdf\r\nasd\r\nfs\r\ndaf\r\nasdf\r\nsad\r\nfasd\r\nf\r\nadsf\r\nasd\r\nfads\r\nf\r\nasdf\r\nasd\r\nfsad\r\nfsa\r\ndf\r\nasdf\r\nasdf\r\nsad\r\nf\r\nasdfff"}, "authenticity_token"=>"kO/GIBK7MaQc0T27PctG7KDC2D5eSjP40J928+GvC0Y="}
+Redirected to http://localhost:3000/4b82690539d10e3eea000008
+Completed in 496ms | 302 Found [http://localhost/speeches]
+
+
+Processing SpeechesController#show (for 127.0.0.1 at 2010-02-22 03:22:46) [GET]
+  Parameters: {"id"=>"4b82690539d10e3eea000008"}
+Rendering template within layouts/application
+Rendering speeches/show
+Completed in 11ms (View: 4 | 200 OK [http://localhost/4b82690539d10e3eea000008]
+
+
+Processing SpeechesController#voice (for 127.0.0.1 at 2010-02-22 03:22:47) [GET]
+  Parameters: {"id"=>"4b82690539d10e3eea000008"}
+Sending data speech/voice/4b82690539d10e3eea000008
+Completed in 22ms (View: 1 | 200 OK [http://localhost/speeches/voice/4b82690539d10e3eea000008]

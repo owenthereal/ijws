@@ -10,7 +10,6 @@ class SpeechesController < ApplicationController
   
   def new
     @speech = Speech.new
-    @count = 100
   end
   
   def google_speech(text)
@@ -30,12 +29,6 @@ class SpeechesController < ApplicationController
     else
       render :action => 'new'
     end
-  end
-  
-  def update_message_length
-      pop = params[:message]
-      count = 100 - pop.length()
-      render :text =>  count
   end
   
   # def edit

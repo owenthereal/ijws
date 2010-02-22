@@ -15,7 +15,7 @@ class Speech
   private 
   
   def valid_text?
-    unless self.text.length < 100
+    unless self.text.gsub(/\s+/, ' ').length <= 100
       errors.add(:text, "must have at most 100 words.")
     end
   end
