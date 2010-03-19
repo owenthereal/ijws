@@ -1,0 +1,3 @@
+class RenameCreatedDate < MongodbMigration
+
+end

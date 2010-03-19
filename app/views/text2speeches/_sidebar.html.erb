@@ -1,0 +1,14 @@
+<div class="timeline">
+	<ul class="statuses">
+		<% recent_text2speeches().each do |text2speech|-%>
+		<li>
+			<div class="tweetTxt">
+				<strong><%= link_to trim_text(text2speech.text, 10), text2speech.id.to_s %></strong>
+				<div class="date"><%= time_ago_in_words text2speech.created_at %> ago from <%= text2speech.geo_address %></div>
+			</div>
+			<div class="clear"></div>
+		</li>
+		<% end-%>
+	</ul>
+</div>
+

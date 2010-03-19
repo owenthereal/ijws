@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :speeches
+  map.resources :text2speeches
 
   # The priority is based upon order of creation: first created -> highest priority.
 
@@ -33,7 +33,7 @@ ActionController::Routing::Routes.draw do |map|
   #   end
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
-  map.root :controller => "speeches",
+  map.root :controller => "text2speeches",
            :action => "new"
 
   # See how all your routes lay out with "rake routes"
@@ -42,8 +42,8 @@ ActionController::Routing::Routes.draw do |map|
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing or commenting them out if you're using named routes and resources.
   
-  map.connect ':id',
-               :controller => "speeches",
+  map.connect ':hash',
+               :controller => "text2speeches",
                :action => "show"
                            
   map.connect ':controller/:action/:id'

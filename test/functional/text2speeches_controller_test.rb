@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class SpeechesControllerTest < ActionController::TestCase
+class Text2speechesControllerTest < ActionController::TestCase
   def test_index
     get :index
     assert_template 'index'

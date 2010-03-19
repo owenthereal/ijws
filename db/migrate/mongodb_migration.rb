@@ -1,0 +1,5 @@
+require 
+
+class MongodbMigration
+
+end

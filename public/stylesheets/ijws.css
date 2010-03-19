@@ -1,27 +1,30 @@
+body,h1,h2,h3,p,td,quote,small,form,input,ul,li,ol,label{
+	margin:0px;
+	padding:0px;
+	color: #4sd4c4c;
+}
+
 body
 {
-	background: #fff url(../images/bg.png) center top repeat-x; /*78aabf*/
-	color: #4d4c4c;
+	color: rgb(77, 76, 76);
 	font-size: 62.5%;
 	font-family: Comic Sans MS, Arial, Helvetica, sans-serif;
-	margin: 0;
-	padding: 0;
+	background: url(../images/bg-clouds.png) repeat-x rgb(192, 222, 237);
 }
 
 #container 
 { 
 	background: url(../images/pingu.png) no-repeat; 
-	width: 1200px; 
+	width: 1000px; 
 	height: 610px; 
-	margin: 20px auto 0 0; 
-	padding: 2px; 
+	margin: 20px 0 0 0; 
 	color: #343434; 
 } 
 
 #container .right
 {
 	float: right;
-	width: 710px;
+	width: 510px;
 }
 
 #container .right .bubble
@@ -38,10 +41,10 @@ body
 	font-weight: normal;
 }
 
-#container span.small
+span.small
 {
 	font-size: 25px;
-	color: #294053;
+	color: #4sd4c4c;
 	font-weight: normal;
 }
 
@@ -127,7 +130,7 @@ body
 	font-weight:bold;
 	height:40px;
 	overflow:hidden;
-	padding: 0 310px 0 0;
+	padding: 0 110px 0 0;
 }
 
 #counter.error {color:#D40D12;}
@@ -170,7 +173,7 @@ body
 }
 
 #container .player {
-	margin: 35px 0 0 30px;
+	margin: 45px 0 0 30px;
 	background-color: transparent;
 }
 
@@ -183,7 +186,7 @@ body
 }
 
 #errorExplanation {
-	padding: 1px 0 0 30px;
+	padding: 10px 0 0 30px;
 	font-size: 10px;
 	color: #CF0000;;
 }
@@ -195,4 +198,64 @@ body
 #container span.speech_text{
 	font-size: 12px;
 }
+
+table.main {
+	width: 90%;
+	margin: 10px auto auto auto;
+}
+
+td.container {
+	width: 70%;
+}
+
+td.sidebar {
+	width: 30%;
+	vertical-align: top;
+	background-color: #DDEEF6;
+	border-left: 1px solid rgb(192, 222, 237);
+	
+	-moz-border-radius:6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius:6px;
+}
+
+ul.statuses{
+	margin:0;
+}
+
+ul.statuses li {
+	position:relative;
+	border-bottom:1px dashed #C0DEED;
+	padding:15px 15px 15px 10px;
+	list-style:none;
+	font-size:14px;
+}
+
+div.tweetTxt{
+	float:left;
+	overflow:hidden;	
+	word-wrap: break-word;
+}
+
+div.date{
+	line-height:18px;
+	font-size:10px;
+	color:#999999;
+}
+
+li a, li a:visited {
+	color:#007bc4;
+	text-decoration:none;
+	outline:none;
+}
+
+li a:hover{
+	text-decoration:underline;
+}
+
+.clear{
+	clear:both;
+}
+
 
