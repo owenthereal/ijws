@@ -31,7 +31,7 @@ module GeoLocation
     self["#{name}_lat"] = geo_loc.lat
     self["#{name}_lng"] = geo_loc.lng
 
-    res = Geokit::Geocoders::GoogleGeocoder.reverse_geocode([geo_loc.lat, geo_loc.lng])
+    res = Geokit::Geocoders::MultiGeocoder.reverse_geocode([geo_loc.lat, geo_loc.lng])
     self["#{name}_address"] = res.full_address
   end
 end

@@ -45211,3 +45211,32 @@ Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-20 00:16:04)
   Parameters: {"id"=>"4ba4763239d10e1d81000002"}
 Sending data text2speech/speech/4ba4763239d10e1d81000002
 Completed in 226ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba4763239d10e1d81000002]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-20 00:21:44) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (108.2ms)
+Rendered text2speeches/_sidebar (30.1ms)
+Completed in 337ms (View: 159 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-20 00:21:48) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"lSL2XLDxW1Dnv02YqK1VqT914G0S+BJLBaBu5RB1HJE=", "text2speech"=>{"text"=>"hey yo"}}
+Redirected to http://localhost:3000/TxT
+Completed in 1134ms | 302 Found [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-20 00:21:49) [GET]
+  Parameters: {"hash"=>"TxT"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (2.3ms)
+Rendered text2speeches/_sidebar (5.4ms)
+Completed in 33ms (View: 18 | 200 OK [http://localhost/TxT]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-20 00:21:50) [GET]
+  Parameters: {"id"=>"4ba4778c39d10e1db8000002"}
+Sending data text2speech/speech/4ba4778c39d10e1db8000002
+Completed in 165ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba4778c39d10e1db8000002]
