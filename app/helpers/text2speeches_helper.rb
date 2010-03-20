@@ -30,6 +30,14 @@ module Text2speechesHelper
       text.match(/#{reg_exp}/)[0] + '...'
     end
   end
+  
+  def geo_location(text2speech)
+    if text2speech.geo_address.nil?
+      ""
+    else
+      "from " + text2speech.geo_address
+    end
+  end
 end
 
 class String

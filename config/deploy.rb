@@ -34,6 +34,7 @@ namespace :deploy do
     invoke_command "#{deploy_to}/bin/stop"
   end
   task :restart, :roles => :app, :except => { :no_release => true } do
-    invoke_command "#{deploy_to}/bin/restart"
+    invoke_command "#{deploy_to}/bin/stop"
+    invoke_command "#{deploy_to}/bin/start"
   end
 end

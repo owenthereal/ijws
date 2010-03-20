@@ -4,7 +4,7 @@
 		<li>
 			<div class="tweetTxt">
 				<strong><%= link_to h(trim_text(text2speech.text, 10)), text2speech.uid_hash %></strong>
-				<div class="date"><%= time_ago_in_words text2speech.created_at %> ago from <%= text2speech.geo_address %></div>
+				<div class="date"><%= time_ago_in_words text2speech.created_at %> ago <%= geo_location text2speech %></div>
 			</div>
 			<div class="clear"></div>
 		</li>
