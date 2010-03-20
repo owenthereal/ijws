@@ -10,11 +10,15 @@ module Text2speechesHelper
   end
 
   def recent_text2speeches()
-    Text2speech.all(:order => 'created_at desc', :limit => 7)
+    Text2speech.all(:order => 'created_at desc', :limit => 6)
   end
 
   def text2speech_url(text2speech)
     URI::HTTP.build(:host => request.host, :port => request.port, :path => "/#{text2speech.uid_hash}").to_s
+  end
+  
+  def share_content(text2speech)
+    "I just wanna say..." + text2speech_url(text2speech)
   end
 
   def trim_text(text, number_of_words)

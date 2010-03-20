@@ -42026,3 +42026,2935 @@ Rendering text2speeches/new
 Rendered text2speeches/_form (2.2ms)
 Rendered text2speeches/_sidebar (8.3ms)
 Completed in 31ms (View: 14 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:05:16) [GET]
+  Parameters: {"hash"=>"pH1"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+
+ActionView::TemplateError (undefined method `>' for nil:NilClass) on line #6 of app/views/text2speeches/_sidebar.html.erb:
+3: 		<% recent_text2speeches().each do |text2speech|-%>
+4: 		<li>
+5: 			<div class="tweetTxt">
+6: 				<strong><%= link_to trim_text(text2speech.text, 10), text2speech.uid_hash %></strong>
+7: 				<div class="date"><%= time_ago_in_words text2speech.created_at %> ago from <%= text2speech.geo_address %></div>
+8: 			</div>
+9: 			<div class="clear"></div>
+
+    lib/base_x_hash.rb:31:in `encode'
+    lib/base_x_hash.rb:14:in `uid_hash'
+    app/views/text2speeches/_sidebar.html.erb:6
+    app/views/text2speeches/_sidebar.html.erb:3:in `each'
+    app/views/text2speeches/_sidebar.html.erb:3
+    app/views/layouts/application.html.erb:32
+
+Rendered rescues/_trace (40.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:05:59) [GET]
+  Parameters: {"hash"=>"pH1"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sidebar (8.8ms)
+Completed in 98ms (View: 16 | 200 OK [http://localhost/pH1]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-18 23:05:59) [GET]
+  Parameters: {"id"=>"4ba2d3b939d10e2871000002"}
+Sending data text2speech/speech/4ba2d3b939d10e2871000002
+Completed in 328ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba2d3b939d10e2871000002]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:06:08) [GET]
+  Parameters: {"hash"=>"pH1"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+
+ActionView::TemplateError (undefined method `>' for nil:NilClass) on line #6 of app/views/text2speeches/_sidebar.html.erb:
+3: 		<% recent_text2speeches().each do |text2speech|-%>
+4: 		<li>
+5: 			<div class="tweetTxt">
+6: 				<strong><%= link_to trim_text(text2speech.text, 10), text2speech.uid_hash.to_s %></strong>
+7: 				<div class="date"><%= time_ago_in_words text2speech.created_at %> ago from <%= text2speech.geo_address %></div>
+8: 			</div>
+9: 			<div class="clear"></div>
+
+    lib/base_x_hash.rb:31:in `encode'
+    lib/base_x_hash.rb:14:in `uid_hash'
+    app/views/text2speeches/_sidebar.html.erb:6
+    app/views/text2speeches/_sidebar.html.erb:3:in `each'
+    app/views/text2speeches/_sidebar.html.erb:3
+    app/views/layouts/application.html.erb:32
+
+Rendered rescues/_trace (107.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:07:27) [GET]
+  Parameters: {"hash"=>"pH1"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+
+ActionView::TemplateError (undefined method `>' for nil:NilClass) on line #6 of app/views/text2speeches/_sidebar.html.erb:
+3: 		<% recent_text2speeches().each do |text2speech|-%>
+4: 		<li>
+5: 			<div class="tweetTxt">
+6: 				<strong><%=h link_to trim_text(text2speech.text, 10), text2speech.uid_hash %></strong>
+7: 				<div class="date"><%= time_ago_in_words text2speech.created_at %> ago from <%= text2speech.geo_address %></div>
+8: 			</div>
+9: 			<div class="clear"></div>
+
+    lib/base_x_hash.rb:31:in `encode'
+    lib/base_x_hash.rb:14:in `uid_hash'
+    app/views/text2speeches/_sidebar.html.erb:6
+    app/views/text2speeches/_sidebar.html.erb:3:in `each'
+    app/views/text2speeches/_sidebar.html.erb:3
+    app/views/layouts/application.html.erb:32
+
+Rendered rescues/_trace (112.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:09:59) [GET]
+  Parameters: {"hash"=>"pH1"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+
+ActionView::TemplateError (undefined method `uid_hash' for nil:NilClass) on line #11 of app/views/text2speeches/show.html.erb:
+8: 		You need to have <%= link_to 'Flash Player', 'http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash' %> installed to display this video
+9: 	</div>
+10: 	<div id="urlForm" class="urlForm">
+11: 		<input id="link" class="link" type="text" value="<%= text2speech_url @text2speech %>" size="40" readonly="true" onClick="SelectAll('link')"/>
+12: 	</div>
+13: </div>
+14: 
+
+    app/helpers/text2speeches_helper.rb:17:in `text2speech_url'
+    app/views/text2speeches/show.html.erb:11
+
+Rendered rescues/_trace (34.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:10:35) [GET]
+  Parameters: {"hash"=>"pH1"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+
+ActionView::TemplateError (undefined method `uid_hash' for nil:NilClass) on line #11 of app/views/text2speeches/show.html.erb:
+8: 		You need to have <%= link_to 'Flash Player', 'http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash' %> installed to display this video
+9: 	</div>
+10: 	<div id="urlForm" class="urlForm">
+11: 		<input id="link" class="link" type="text" value="<%= text2speech_url @text2speech %>" size="40" readonly="true" onClick="SelectAll('link')"/>
+12: 	</div>
+13: </div>
+14: 
+
+    app/helpers/text2speeches_helper.rb:17:in `text2speech_url'
+    app/views/text2speeches/show.html.erb:11
+
+Rendered rescues/_trace (33.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-18 23:10:51) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (108.8ms)
+Rendered text2speeches/_sidebar (1.9ms)
+Completed in 293ms (View: 129 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-18 23:10:56) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"W0gFVv4jlWJ9+r2o3yzjAfXQPkbcbbq+tBFL6k3rUFg=", "text2speech"=>{"text"=>"hello world"}}
+Redirected to http://localhost:3000/PrH
+Completed in 904ms | 302 Found [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:10:57) [GET]
+  Parameters: {"hash"=>"PrH"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sidebar (3.3ms)
+Completed in 27ms (View: 12 | 200 OK [http://localhost/PrH]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-18 23:10:57) [GET]
+  Parameters: {"id"=>"4ba3157039d10e3139000002"}
+Sending data text2speech/speech/4ba3157039d10e3139000002
+Completed in 217ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba3157039d10e3139000002]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:11:20) [GET]
+  Parameters: {"hash"=>"PrH"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sidebar (3.3ms)
+Completed in 84ms (View: 67 | 200 OK [http://localhost/PrH]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-18 23:11:22) [GET]
+  Parameters: {"id"=>"4ba3157039d10e3139000002"}
+Sending data text2speech/speech/4ba3157039d10e3139000002
+Completed in 206ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba3157039d10e3139000002]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:11:31) [GET]
+  Parameters: {"hash"=>"PrH"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sidebar (2.5ms)
+Completed in 23ms (View: 7 | 200 OK [http://localhost/PrH]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-18 23:11:31) [GET]
+  Parameters: {"id"=>"4ba3157039d10e3139000002"}
+Sending data text2speech/speech/4ba3157039d10e3139000002
+Completed in 212ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba3157039d10e3139000002]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-18 23:11:36) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (73.9ms)
+Rendered text2speeches/_sidebar (2.7ms)
+Completed in 94ms (View: 80 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-18 23:11:42) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"W0gFVv4jlWJ9+r2o3yzjAfXQPkbcbbq+tBFL6k3rUFg=", "text2speech"=>{"text"=>"you rock!"}}
+Redirected to http://localhost:3000/5sV
+Completed in 725ms | 302 Found [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:11:43) [GET]
+  Parameters: {"hash"=>"5sV"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sidebar (3.0ms)
+Completed in 22ms (View: 7 | 200 OK [http://localhost/5sV]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-18 23:11:44) [GET]
+  Parameters: {"id"=>"4ba3159e39d10e3139000004"}
+Sending data text2speech/speech/4ba3159e39d10e3139000004
+Completed in 230ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba3159e39d10e3139000004]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-18 23:12:07) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (3.2ms)
+Rendered text2speeches/_sidebar (3.3ms)
+Completed in 38ms (View: 21 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-18 23:12:16) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"W0gFVv4jlWJ9+r2o3yzjAfXQPkbcbbq+tBFL6k3rUFg=", "text2speech"=>{"text"=>"Just wanted to thank you for the fantastic bookmark plug-in. Josh Berman. Been trying out your socia"}}
+Redirected to http://localhost:3000/FCV
+Completed in 1498ms | 302 Found [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:12:17) [GET]
+  Parameters: {"hash"=>"FCV"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sidebar (3.7ms)
+Completed in 22ms (View: 7 | 200 OK [http://localhost/FCV]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-18 23:12:18) [GET]
+  Parameters: {"id"=>"4ba315c039d10e3139000006"}
+Sending data text2speech/speech/4ba315c039d10e3139000006
+Completed in 1395ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba315c039d10e3139000006]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:12:41) [GET]
+  Parameters: {"hash"=>"FCV"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sidebar (3.5ms)
+Completed in 23ms (View: 8 | 200 OK [http://localhost/FCV]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-18 23:12:41) [GET]
+  Parameters: {"id"=>"4ba315c039d10e3139000006"}
+Sending data text2speech/speech/4ba315c039d10e3139000006
+Completed in 1934ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba315c039d10e3139000006]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:12:46) [GET]
+  Parameters: {"hash"=>"5sV"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sidebar (5.0ms)
+Completed in 83ms (View: 9 | 200 OK [http://localhost/5sV]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-18 23:12:46) [GET]
+  Parameters: {"id"=>"4ba3159e39d10e3139000004"}
+Sending data text2speech/speech/4ba3159e39d10e3139000004
+Completed in 313ms (View: 0 | 200 OK [http://localhost/text2speeches/speech/4ba3159e39d10e3139000004]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:12:48) [GET]
+  Parameters: {"hash"=>"PrH"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sidebar (3.6ms)
+Completed in 25ms (View: 7 | 200 OK [http://localhost/PrH]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-18 23:12:49) [GET]
+  Parameters: {"id"=>"4ba3157039d10e3139000002"}
+Sending data text2speech/speech/4ba3157039d10e3139000002
+Completed in 217ms (View: 0 | 200 OK [http://localhost/text2speeches/speech/4ba3157039d10e3139000002]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:12:51) [GET]
+  Parameters: {"hash"=>"FCV"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sidebar (65.9ms)
+Completed in 85ms (View: 70 | 200 OK [http://localhost/FCV]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-18 23:12:51) [GET]
+  Parameters: {"id"=>"4ba315c039d10e3139000006"}
+Sending data text2speech/speech/4ba315c039d10e3139000006
+Completed in 266ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba315c039d10e3139000006]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-18 23:13:18) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (4.8ms)
+Completed in 32ms (View: 17 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-18 23:13:32) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"W0gFVv4jlWJ9+r2o3yzjAfXQPkbcbbq+tBFL6k3rUFg=", "text2speech"=>{"text"=>"Today we listed 5 Incredibly Useful Collection of JQuery and ajax social bookmark widget tutorials"}}
+Redirected to http://localhost:3000/OX1
+Completed in 771ms | 302 Found [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:13:33) [GET]
+  Parameters: {"hash"=>"OX1"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sidebar (4.4ms)
+Completed in 47ms (View: 28 | 200 OK [http://localhost/OX1]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-18 23:13:34) [GET]
+  Parameters: {"id"=>"4ba3160c39d10e3139000008"}
+Sending data text2speech/speech/4ba3160c39d10e3139000008
+Completed in 2570ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba3160c39d10e3139000008]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-18 23:14:05) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.6ms)
+Rendered text2speeches/_sidebar (14.2ms)
+Completed in 38ms (View: 22 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-18 23:14:08) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"W0gFVv4jlWJ9+r2o3yzjAfXQPkbcbbq+tBFL6k3rUFg=", "text2speech"=>{"text"=>"jQuery Share It! Hides and toggles a group of social bookmark icons with a nice slide animation"}}
+Redirected to http://localhost:3000/HbX
+Completed in 780ms | 302 Found [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:14:09) [GET]
+  Parameters: {"hash"=>"HbX"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sidebar (4.7ms)
+Completed in 25ms (View: 9 | 200 OK [http://localhost/HbX]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-18 23:14:10) [GET]
+  Parameters: {"id"=>"4ba3163039d10e313900000a"}
+Sending data text2speech/speech/4ba3163039d10e313900000a
+Completed in 897ms (View: 0 | 200 OK [http://localhost/text2speeches/speech/4ba3163039d10e313900000a]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-18 23:14:36) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (5.4ms)
+Completed in 27ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-18 23:14:38) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"W0gFVv4jlWJ9+r2o3yzjAfXQPkbcbbq+tBFL6k3rUFg=", "text2speech"=>{"text"=>"jScrollPane is a jquery plugin which allows you to replace the browsers"}}
+Redirected to http://localhost:3000/XJv
+Completed in 792ms | 302 Found [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:14:39) [GET]
+  Parameters: {"hash"=>"XJv"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sidebar (5.9ms)
+Completed in 27ms (View: 10 | 200 OK [http://localhost/XJv]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-18 23:14:39) [GET]
+  Parameters: {"id"=>"4ba3164e39d10e313900000c"}
+Sending data text2speech/speech/4ba3164e39d10e313900000c
+Completed in 619ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba3164e39d10e313900000c]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-18 23:15:38) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (78.1ms)
+Completed in 103ms (View: 87 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-18 23:15:41) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"W0gFVv4jlWJ9+r2o3yzjAfXQPkbcbbq+tBFL6k3rUFg=", "text2speech"=>{"text"=>"Similar in concept to the social bookmarking toolbar from AddThis.com"}}
+Redirected to http://localhost:3000/7c3
+Completed in 1284ms | 302 Found [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:15:42) [GET]
+  Parameters: {"hash"=>"7c3"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sidebar (5.8ms)
+Completed in 26ms (View: 10 | 200 OK [http://localhost/7c3]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-18 23:15:43) [GET]
+  Parameters: {"id"=>"4ba3168d39d10e313900000e"}
+Sending data text2speech/speech/4ba3168d39d10e313900000e
+Completed in 1191ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba3168d39d10e313900000e]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:15:56) [GET]
+  Parameters: {"hash"=>"7c3"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sidebar (5.5ms)
+Completed in 26ms (View: 10 | 200 OK [http://localhost/7c3]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-18 23:15:57) [GET]
+  Parameters: {"id"=>"4ba3168d39d10e313900000e"}
+Sending data text2speech/speech/4ba3168d39d10e313900000e
+Completed in 1101ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba3168d39d10e313900000e]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-18 23:16:45) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 36ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-18 23:16:53) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"W0gFVv4jlWJ9+r2o3yzjAfXQPkbcbbq+tBFL6k3rUFg=", "text2speech"=>{"text"=>"In this article tripwire magazine provides a tutorial on how the jQuery based Social Bookmarking"}}
+Redirected to http://localhost:3000/Cwp
+Completed in 874ms | 302 Found [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:16:54) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sidebar (4.4ms)
+Completed in 23ms (View: 8 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-18 23:16:55) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 1526ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:17:01) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sidebar (5.5ms)
+Completed in 27ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-18 23:17:01) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 3220ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:17:14) [GET]
+  Parameters: {"hash"=>"7c3"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sidebar (27.8ms)
+Completed in 78ms (View: 34 | 200 OK [http://localhost/7c3]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-18 23:17:15) [GET]
+  Parameters: {"id"=>"4ba3168d39d10e313900000e"}
+Sending data text2speech/speech/4ba3168d39d10e313900000e
+Completed in 386ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba3168d39d10e313900000e]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:17:22) [GET]
+  Parameters: {"hash"=>"XJv"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sidebar (5.0ms)
+Completed in 25ms (View: 9 | 200 OK [http://localhost/XJv]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-18 23:17:23) [GET]
+  Parameters: {"id"=>"4ba3164e39d10e313900000c"}
+Sending data text2speech/speech/4ba3164e39d10e313900000c
+Completed in 1054ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba3164e39d10e313900000c]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:17:30) [GET]
+  Parameters: {"hash"=>"HbX"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sidebar (4.9ms)
+Completed in 25ms (View: 9 | 200 OK [http://localhost/HbX]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-18 23:17:30) [GET]
+  Parameters: {"id"=>"4ba3163039d10e313900000a"}
+Sending data text2speech/speech/4ba3163039d10e313900000a
+Completed in 310ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba3163039d10e313900000a]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:17:38) [GET]
+  Parameters: {"hash"=>"OX1"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sidebar (5.2ms)
+Completed in 26ms (View: 9 | 200 OK [http://localhost/OX1]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-18 23:17:39) [GET]
+  Parameters: {"id"=>"4ba3160c39d10e3139000008"}
+Sending data text2speech/speech/4ba3160c39d10e3139000008
+Completed in 1443ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba3160c39d10e3139000008]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-18 23:17:49) [GET]
+  Parameters: {"hash"=>"FCV"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sidebar (5.8ms)
+Completed in 95ms (View: 10 | 200 OK [http://localhost/FCV]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-18 23:17:50) [GET]
+  Parameters: {"id"=>"4ba315c039d10e3139000006"}
+Sending data text2speech/speech/4ba315c039d10e3139000006
+Completed in 2465ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba315c039d10e3139000006]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 09:57:19) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (19.2ms)
+Rendered text2speeches/_sidebar (7.7ms)
+Completed in 70ms (View: 31 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 10:39:48) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (190.8ms)
+Rendered text2speeches/_sidebar (39.1ms)
+Completed in 418ms (View: 252 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:39:51) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (1.6ms)
+Rendered text2speeches/_sidebar (5.2ms)
+Completed in 34ms (View: 18 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:39:51) [GET]
+
+ActionController::RoutingError (No route matches "/path/to/directory/js/sexy-bookmarks-public.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:39:51) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:39:52) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 828ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:40:23) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 772ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 10:41:44) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (6.1ms)
+Completed in 28ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:41:46) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.1ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 24ms (View: 9 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:41:46) [GET]
+
+ActionController::RoutingError (No route matches "/path/to/directory/js/sexy-bookmarks-public.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:41:46) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:41:46) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 1074ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:42:26) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (1.8ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 29ms (View: 14 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:42:26) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:42:26) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 234ms (View: 0 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:46:48) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (1.6ms)
+Rendered text2speeches/_sidebar (7.1ms)
+Completed in 36ms (View: 16 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:46:49) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:46:49) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 804ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:48:18) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (6.6ms)
+Completed in 84ms (View: 69 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:48:18) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:48:19) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 779ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:50:51) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (6.2ms)
+Completed in 49ms (View: 11 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:50:52) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:50:52) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 277ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:51:01) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.2ms)
+Completed in 28ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:51:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:51:02) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 937ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:51:08) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.6ms)
+Completed in 84ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:51:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:51:09) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 202ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:51:16) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (4.9ms)
+Completed in 25ms (View: 9 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:51:16) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:51:16) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 211ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:51:33) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.0ms)
+Completed in 25ms (View: 9 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:51:33) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:51:34) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 203ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:51:47) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.2ms)
+Completed in 25ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:51:47) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:51:47) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 211ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:51:52) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (6.8ms)
+Completed in 28ms (View: 11 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:51:53) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:51:53) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 854ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:52:09) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.1ms)
+Completed in 26ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:52:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:52:10) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 262ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:52:58) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.5ms)
+Rendered text2speeches/_sidebar (6.1ms)
+Completed in 28ms (View: 12 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:52:58) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:52:58) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 208ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:53:05) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.0ms)
+Completed in 24ms (View: 9 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:53:05) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:53:06) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 789ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:53:22) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.1ms)
+Completed in 26ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:53:22) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:53:23) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 269ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:53:32) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.2ms)
+Completed in 27ms (View: 11 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:53:32) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:53:32) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 209ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:53:41) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.8ms)
+Rendered text2speeches/_sidebar (5.6ms)
+Completed in 93ms (View: 77 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:53:41) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:53:42) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 206ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:53:54) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.5ms)
+Completed in 26ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:53:54) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:53:54) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 290ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:54:07) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.0ms)
+Completed in 26ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:54:08) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:54:08) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 213ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:55:57) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.4ms)
+Completed in 87ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:55:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:55:57) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 211ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:57:29) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (6.0ms)
+Completed in 30ms (View: 15 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:57:30) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:57:30) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 220ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:57:49) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 26ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:57:49) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:57:49) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 209ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:58:05) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.4ms)
+Completed in 27ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:58:05) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:58:05) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 219ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:58:22) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 26ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:58:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:58:23) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 890ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:58:49) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.7ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 27ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:58:49) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:58:49) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 885ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:59:46) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.9ms)
+Completed in 27ms (View: 11 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:59:46) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:59:47) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 207ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 10:59:57) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 27ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 10:59:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 10:59:58) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 210ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:00:08) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (7.3ms)
+Completed in 29ms (View: 13 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 11:00:08) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:00:09) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 363ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:00:15) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.4ms)
+Completed in 27ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 11:00:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:00:16) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 208ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:00:24) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (73.8ms)
+Completed in 94ms (View: 79 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 11:00:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:00:24) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 203ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:00:29) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.4ms)
+Completed in 28ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 11:00:29) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:00:29) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 478ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:00:41) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.2ms)
+Completed in 28ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 11:00:41) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:00:41) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 242ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:03:59) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.4ms)
+Completed in 98ms (View: 14 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 11:04:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:04:00) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 828ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:07:12) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 30ms (View: 13 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:07:22) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.1ms)
+Completed in 25ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:07:27) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.5ms)
+Completed in 30ms (View: 14 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:07:40) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.7ms)
+Completed in 31ms (View: 15 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 11:07:40) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:07:41) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 892ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:08:01) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.4ms)
+Completed in 30ms (View: 14 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 11:08:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:08:02) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 982ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:08:16) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.7ms)
+Completed in 32ms (View: 14 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 11:08:16) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:08:16) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 805ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:08:44) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.5ms)
+Completed in 102ms (View: 14 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 11:08:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:08:45) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 779ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:09:19) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.5ms)
+Completed in 29ms (View: 14 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 11:09:19) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:09:20) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 359ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:10:27) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.1ms)
+Completed in 29ms (View: 13 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 11:10:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:10:28) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 275ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:11:55) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.5ms)
+Rendered text2speeches/_sidebar (5.8ms)
+Completed in 30ms (View: 14 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 11:11:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:11:56) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 209ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:12:29) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.0ms)
+Completed in 27ms (View: 9 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 11:12:30) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:12:30) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 4158ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:12:37) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.5ms)
+Rendered text2speeches/_sidebar (5.1ms)
+Completed in 26ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 11:12:38) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:12:38) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 859ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:13:49) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.5ms)
+Completed in 32ms (View: 11 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 11:13:49) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:13:50) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 207ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:14:03) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.6ms)
+Rendered text2speeches/_sidebar (9.9ms)
+Completed in 133ms (View: 108 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 11:14:04) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:14:04) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 794ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:15:30) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (6.9ms)
+Completed in 33ms (View: 15 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 11:15:30) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:15:30) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 914ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:15:45) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.6ms)
+Completed in 34ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 11:15:46) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:15:46) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 259ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:16:05) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (6.0ms)
+Completed in 147ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-19 11:16:05) [GET]
+
+ActionController::RoutingError (No route matches "/images/sexy-trans.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:16:06) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 864ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:19:38) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 27ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:19:38) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 764ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:19:46) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (6.1ms)
+Completed in 29ms (View: 12 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:19:47) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 175ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:24:54) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (7.4ms)
+Completed in 116ms (View: 100 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:24:55) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 791ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:28:32) [GET]
+  Parameters: {"hash"=>"7c3"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.5ms)
+Rendered text2speeches/_sidebar (5.2ms)
+Completed in 25ms (View: 10 | 200 OK [http://localhost/7c3]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:28:33) [GET]
+  Parameters: {"id"=>"4ba3168d39d10e313900000e"}
+Sending data text2speech/speech/4ba3168d39d10e313900000e
+Completed in 600ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba3168d39d10e313900000e]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 11:29:13) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (5.8ms)
+Completed in 27ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:29:26) [GET]
+  Parameters: {"hash"=>"XJv"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.1ms)
+Completed in 24ms (View: 9 | 200 OK [http://localhost/XJv]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:29:27) [GET]
+  Parameters: {"id"=>"4ba3164e39d10e313900000c"}
+Sending data text2speech/speech/4ba3164e39d10e313900000c
+Completed in 500ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba3164e39d10e313900000c]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 11:32:31) [GET]
+  Parameters: {"hash"=>"XJv"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (6.2ms)
+Completed in 29ms (View: 11 | 200 OK [http://localhost/XJv]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 11:32:32) [GET]
+  Parameters: {"id"=>"4ba3164e39d10e313900000c"}
+Sending data text2speech/speech/4ba3164e39d10e313900000c
+Completed in 438ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba3164e39d10e313900000c]
+
+
+Processing Text2speechesController#index (for 127.0.0.1 at 2010-03-19 11:32:35) [GET]
+Redirected to http://localhost:3000/
+Completed in 1ms | 302 Found [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 11:32:35) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (3.2ms)
+Rendered text2speeches/_sidebar (5.4ms)
+Completed in 27ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#index (for 127.0.0.1 at 2010-03-19 11:32:58) [GET]
+Redirected to http://localhost:3000/
+Completed in 1ms | 302 Found [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 11:32:58) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (5.7ms)
+Completed in 27ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 14:54:33) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.8ms)
+Rendered text2speeches/_sidebar (146.5ms)
+Completed in 414ms (View: 165 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 14:54:38) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 794ms (View: 3 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 15:53:59) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.5ms)
+Rendered text2speeches/_sidebar (12.5ms)
+Completed in 62ms (View: 21 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 15:54:00) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 979ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 15:54:43) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 26ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 15:54:44) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 766ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 15:55:26) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (119.2ms)
+Completed in 143ms (View: 124 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 15:55:27) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 804ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 15:56:05) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (12.7ms)
+Completed in 42ms (View: 18 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 15:56:06) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 380ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 15:58:41) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.5ms)
+Rendered text2speeches/_sidebar (10.3ms)
+Completed in 47ms (View: 21 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 15:58:42) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 810ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 16:00:04) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (14.0ms)
+Completed in 38ms (View: 20 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 16:00:05) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 867ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 16:01:49) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.5ms)
+Rendered text2speeches/_sidebar (12.2ms)
+Completed in 67ms (View: 36 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 16:01:50) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 215ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 16:13:20) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (11.1ms)
+Completed in 52ms (View: 17 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 16:13:21) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 872ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 16:16:08) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (15.7ms)
+Rendered text2speeches/_sidebar (8.3ms)
+Completed in 53ms (View: 32 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 16:16:43) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.2ms)
+Completed in 25ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 16:16:44) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 791ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 17:05:43) [GET]
+  Parameters: {"hash"=>"Cwp"}
+
+SyntaxError (/Users/Owen/workspace/ijws/app/models/text2speech.rb:15: syntax error, unexpected ':'):
+  app/controllers/text2speeches_controller.rb:7:in `show'
+
+Rendered rescues/_trace (38.7ms)
+Rendered rescues/_request_and_response (9.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 17:05:59) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (8.8ms)
+Completed in 35ms (View: 14 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 17:06:00) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 807ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:06:04) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (5.2ms)
+Completed in 35ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-19 17:07:22) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"lSL2XLDxW1Dnv02YqK1VqT914G0S+BJLBaBu5RB1HJE=", "text2speech"=>{"text"=>"fuck"}}
+
+NoMethodError (undefined method `<=' for true:TrueClass):
+  app/models/text2speech.rb:32:in `valid_text?'
+  /Users/Owen/.gem/ruby/1.8/gems/jnunemaker-validatable-1.8.1/lib/validatable/validatable_instance_methods.rb:28:in `valid_for_group?'
+  /Users/Owen/.gem/ruby/1.8/gems/jnunemaker-validatable-1.8.1/lib/validatable/validatable_instance_methods.rb:15:in `valid?'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/plugins/callbacks.rb:26:in `valid?'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:364:in `save'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/plugins/dirty.rb:47:in `save'
+  app/controllers/text2speeches_controller.rb:28:in `create'
+
+Rendered rescues/_trace (33.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-19 17:07:54) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"lSL2XLDxW1Dnv02YqK1VqT914G0S+BJLBaBu5RB1HJE=", "text2speech"=>{"text"=>"fuck"}}
+
+ArgumentError (comparison of String with 0 failed):
+  app/models/text2speech.rb:32:in `>'
+  app/models/text2speech.rb:32:in `valid_text?'
+  /Users/Owen/.gem/ruby/1.8/gems/jnunemaker-validatable-1.8.1/lib/validatable/validatable_instance_methods.rb:28:in `valid_for_group?'
+  /Users/Owen/.gem/ruby/1.8/gems/jnunemaker-validatable-1.8.1/lib/validatable/validatable_instance_methods.rb:15:in `valid?'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/plugins/callbacks.rb:26:in `valid?'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/document.rb:364:in `save'
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/plugins/dirty.rb:47:in `save'
+  app/controllers/text2speeches_controller.rb:28:in `create'
+
+Rendered rescues/_trace (32.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-19 17:08:07) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"lSL2XLDxW1Dnv02YqK1VqT914G0S+BJLBaBu5RB1HJE=", "text2speech"=>{"text"=>"fuck"}}
+Redirected to http://localhost:3000/8XT
+Completed in 822ms | 302 Found [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 17:08:07) [GET]
+  Parameters: {"hash"=>"8XT"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 129ms (View: 10 | 200 OK [http://localhost/8XT]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 17:08:08) [GET]
+  Parameters: {"id"=>"4ba411e739d10e047500000a"}
+Sending data text2speech/speech/4ba411e739d10e047500000a
+Completed in 144ms (View: 0 | 200 OK [http://localhost/text2speeches/speech/4ba411e739d10e047500000a]
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-19 17:08:25) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"lSL2XLDxW1Dnv02YqK1VqT914G0S+BJLBaBu5RB1HJE=", "text2speech"=>{"text"=>"fuck you"}}
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_sidebar (5.1ms)
+Completed in 29ms (View: 11 | 200 OK [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-19 17:08:27) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"lSL2XLDxW1Dnv02YqK1VqT914G0S+BJLBaBu5RB1HJE=", "text2speech"=>{"text"=>"fuck you"}}
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.6ms)
+Rendered text2speeches/_sidebar (101.3ms)
+Completed in 126ms (View: 107 | 200 OK [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-19 17:08:32) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"lSL2XLDxW1Dnv02YqK1VqT914G0S+BJLBaBu5RB1HJE=", "text2speech"=>{"text"=>"panies"}}
+Redirected to http://localhost:3000/LSP
+Completed in 703ms | 302 Found [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 17:08:32) [GET]
+  Parameters: {"hash"=>"LSP"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.2ms)
+Completed in 27ms (View: 10 | 200 OK [http://localhost/LSP]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 17:08:33) [GET]
+  Parameters: {"id"=>"4ba4120039d10e047500000d"}
+Sending data text2speech/speech/4ba4120039d10e047500000d
+Completed in 201ms (View: 0 | 200 OK [http://localhost/text2speeches/speech/4ba4120039d10e047500000d]
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-19 17:09:31) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"lSL2XLDxW1Dnv02YqK1VqT914G0S+BJLBaBu5RB1HJE=", "text2speech"=>{"text"=>"fuck you"}}
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (5.1ms)
+Completed in 29ms (View: 11 | 200 OK [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-19 17:10:38) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"lSL2XLDxW1Dnv02YqK1VqT914G0S+BJLBaBu5RB1HJE=", "text2speech"=>{"text"=>"fuck you"}}
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.6ms)
+Rendered text2speeches/_sidebar (5.5ms)
+Completed in 134ms (View: 16 | 200 OK [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-19 17:10:57) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"lSL2XLDxW1Dnv02YqK1VqT914G0S+BJLBaBu5RB1HJE=", "text2speech"=>{"text"=>"fuck you"}}
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.6ms)
+Rendered text2speeches/_sidebar (5.1ms)
+Completed in 33ms (View: 15 | 200 OK [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:11:00) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (8.1ms)
+Completed in 31ms (View: 14 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:16:27) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.6ms)
+Rendered text2speeches/_sidebar (7.0ms)
+Completed in 35ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:16:47) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.8ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 27ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:17:26) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (3.1ms)
+Rendered text2speeches/_sidebar (5.1ms)
+Completed in 25ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:17:56) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.6ms)
+Rendered text2speeches/_sidebar (6.6ms)
+Completed in 31ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:18:02) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (6.2ms)
+Completed in 29ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:18:42) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_sidebar (5.1ms)
+Completed in 25ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:18:53) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.9ms)
+Rendered text2speeches/_sidebar (5.2ms)
+Completed in 28ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:19:04) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_sidebar (5.5ms)
+Completed in 26ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:19:33) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (99.2ms)
+Rendered text2speeches/_sidebar (5.4ms)
+Completed in 126ms (View: 112 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:19:34) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (3.1ms)
+Rendered text2speeches/_sidebar (5.1ms)
+Completed in 26ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:19:51) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (5.2ms)
+Completed in 26ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:20:01) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.6ms)
+Rendered text2speeches/_sidebar (5.5ms)
+Completed in 127ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:20:07) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.6ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 29ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:20:18) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (5.2ms)
+Completed in 26ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:20:25) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.6ms)
+Rendered text2speeches/_sidebar (5.8ms)
+Completed in 132ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:20:35) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.9ms)
+Rendered text2speeches/_sidebar (5.4ms)
+Completed in 27ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:20:51) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (5.2ms)
+Completed in 26ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:21:01) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (5.9ms)
+Completed in 129ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:21:10) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (3.0ms)
+Rendered text2speeches/_sidebar (6.0ms)
+Completed in 32ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:21:20) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (5.2ms)
+Completed in 27ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:21:29) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (7.3ms)
+Completed in 132ms (View: 14 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:21:38) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (5.2ms)
+Completed in 25ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:23:37) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (6.0ms)
+Completed in 31ms (View: 16 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:24:08) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (3.4ms)
+Rendered text2speeches/_sidebar (6.6ms)
+Completed in 30ms (View: 14 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:24:29) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (5.2ms)
+Completed in 25ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:24:37) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (5.1ms)
+Completed in 28ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:25:02) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (5.6ms)
+Completed in 27ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:25:09) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.8ms)
+Rendered text2speeches/_sidebar (6.2ms)
+Completed in 30ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:25:27) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (5.1ms)
+Completed in 25ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:26:50) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (5.6ms)
+Completed in 29ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:27:01) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (6.1ms)
+Completed in 27ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:27:07) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.8ms)
+Rendered text2speeches/_sidebar (5.5ms)
+Completed in 27ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:27:12) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (5.5ms)
+Completed in 28ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:27:18) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (5.1ms)
+Completed in 26ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:27:32) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (5.2ms)
+Completed in 26ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:27:49) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 28ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:27:59) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_sidebar (5.1ms)
+Completed in 26ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:28:05) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 30ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:28:11) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (5.5ms)
+Completed in 27ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:28:28) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 25ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:28:51) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (118.6ms)
+Rendered text2speeches/_sidebar (5.9ms)
+Completed in 146ms (View: 131 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:29:09) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_sidebar (5.0ms)
+Completed in 26ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:29:15) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (5.4ms)
+Completed in 27ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:29:22) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.6ms)
+Rendered text2speeches/_sidebar (5.7ms)
+Completed in 150ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:29:29) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (5.6ms)
+Completed in 29ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:30:06) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (3.1ms)
+Rendered text2speeches/_sidebar (5.2ms)
+Completed in 29ms (View: 14 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:30:14) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.7ms)
+Rendered text2speeches/_sidebar (6.4ms)
+Completed in 142ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:30:30) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (6.6ms)
+Completed in 28ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:30:41) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 26ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:30:50) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (3.4ms)
+Rendered text2speeches/_sidebar (5.7ms)
+Completed in 138ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:31:00) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (5.5ms)
+Completed in 27ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:31:05) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (5.4ms)
+Completed in 27ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:31:25) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (3.0ms)
+Rendered text2speeches/_sidebar (6.0ms)
+Completed in 29ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:32:11) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (6.4ms)
+Completed in 32ms (View: 16 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:32:23) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (3.2ms)
+Rendered text2speeches/_sidebar (7.4ms)
+Completed in 33ms (View: 15 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:33:34) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (5.1ms)
+Completed in 31ms (View: 15 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:34:09) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (5.2ms)
+Completed in 31ms (View: 16 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:34:40) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (114.8ms)
+Rendered text2speeches/_sidebar (5.7ms)
+Completed in 145ms (View: 129 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:35:55) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.7ms)
+Rendered text2speeches/_sidebar (5.6ms)
+Completed in 33ms (View: 15 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:36:43) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 29ms (View: 15 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 17:36:56) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (7.2ms)
+Completed in 142ms (View: 12 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 17:36:57) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 805ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 17:38:15) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.1ms)
+Completed in 29ms (View: 13 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 17:38:16) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 976ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:38:24) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (3.2ms)
+Rendered text2speeches/_sidebar (5.5ms)
+Completed in 31ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:39:05) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_sidebar (5.1ms)
+Completed in 30ms (View: 14 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:39:13) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.8ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 28ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:39:21) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (6.7ms)
+Completed in 29ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:40:34) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (5.8ms)
+Completed in 26ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:40:40) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (119.8ms)
+Completed in 142ms (View: 126 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:41:29) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.9ms)
+Rendered text2speeches/_sidebar (5.2ms)
+Completed in 27ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:41:36) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (5.6ms)
+Completed in 29ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:42:00) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (118.0ms)
+Completed in 138ms (View: 124 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:42:05) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (5.5ms)
+Completed in 28ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:42:18) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 28ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:42:25) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (113.8ms)
+Rendered text2speeches/_sidebar (5.7ms)
+Completed in 138ms (View: 123 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:43:21) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_sidebar (5.5ms)
+Completed in 27ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-19 17:43:33) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"lSL2XLDxW1Dnv02YqK1VqT914G0S+BJLBaBu5RB1HJE=", "text2speech"=>{"text"=>"dfasdfdsaf"}}
+Redirected to http://localhost:3000/HcX
+Completed in 934ms | 302 Found [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 17:43:34) [GET]
+  Parameters: {"hash"=>"HcX"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.1ms)
+Completed in 25ms (View: 10 | 200 OK [http://localhost/HcX]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 17:43:35) [GET]
+  Parameters: {"id"=>"4ba41a3539d10e047500005b"}
+Sending data text2speech/speech/4ba41a3539d10e047500005b
+Completed in 359ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba41a3539d10e047500005b]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 17:43:39) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.2ms)
+Completed in 28ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 17:43:39) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 761ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 17:45:19) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.5ms)
+Completed in 31ms (View: 14 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 17:45:20) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 837ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:45:21) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_sidebar (6.0ms)
+Completed in 28ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:45:23) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 27ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:45:40) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_sidebar (5.0ms)
+Completed in 25ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:45:41) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (6.0ms)
+Completed in 28ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 17:45:44) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 26ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 17:45:44) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 956ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:45:48) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (3.0ms)
+Rendered text2speeches/_sidebar (127.4ms)
+Completed in 150ms (View: 134 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-19 17:45:50) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"lSL2XLDxW1Dnv02YqK1VqT914G0S+BJLBaBu5RB1HJE=", "text2speech"=>{"text"=>"shit"}}
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.6ms)
+Rendered text2speeches/_sidebar (5.5ms)
+Completed in 31ms (View: 12 | 200 OK [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 17:45:54) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 25ms (View: 10 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 17:45:55) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 816ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-19 17:46:03) [GET]
+  Parameters: {"hash"=>"Cwp"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (119.1ms)
+Rendered text2speeches/_sidebar (5.6ms)
+Completed in 152ms (View: 133 | 200 OK [http://localhost/Cwp]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-19 17:46:04) [GET]
+  Parameters: {"id"=>"4ba316d539d10e3139000010"}
+Sending data text2speech/speech/4ba316d539d10e3139000010
+Completed in 833ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba316d539d10e3139000010]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-19 17:46:05) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (5.7ms)
+Completed in 27ms (View: 12 | 200 OK [http://localhost/]

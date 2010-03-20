@@ -1,8 +1,10 @@
-class Text2speechesController < ApplicationController  
+class Text2speechesController < ApplicationController 
+  def index
+    redirect_to root_path
+  end
+  
   def show
     @text2speech = Text2speech.find_via_hash(params[:hash]) 
-    puts "finding by hash"
-    p @text2speech
   end
   
   def speech

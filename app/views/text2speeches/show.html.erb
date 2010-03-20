@@ -1,4 +1,4 @@
-<% title "I Just Wanna Say..." %>
+<% title "I Just Wanna Say it" %>
 
 <p class="bubble">
 	<span class="small">I just wanna say...</span>	
@@ -7,20 +7,15 @@
 	<div id="text2speech">
 		You need to have <%= link_to 'Flash Player', 'http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash' %> installed to display this video
 	</div>
-	<div id="urlForm" class="urlForm">
-		<input id="link" class="link" type="text" value="<%= text2speech_url @text2speech %>" size="40" readonly="true" onClick="SelectAll('link')"/>
-	</div>
 </div>
 
+<!-- <div id="sexy-bookmarks-content" class="urlForm">
+	<textarea class="link" rows="4" cols="20"><%= share_content @text2speech %></textarea>
+</div> -->
+
+<%= render :partial => 'sexybookmarks' %>
+	
 <% javascript_tag do -%>
 	embedSWF("text2speech", "<%= speech_url_for @text2speech %>", "true");
-<% end -%>
-
-<% javascript_tag do -%>
-function SelectAll(id)
-{
-	document.getElementById(id).focus();
-	document.getElementById(id).select();
-}
 <% end -%>
 

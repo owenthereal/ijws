@@ -5,6 +5,7 @@
 	<title><%= h(yield(:title) || "Untitled") %></title>
 	<%= auto_discovery_link_tag('image/x-icon', 'images/pingu_icon.png', :rel => 'shortcut icon') %>
 	<%= stylesheet_link_tag 'ijws', :media => 'screen'%>
+	<%= stylesheet_link_tag 'style', :media => 'screen'%>
 	<!--[if lt IE 7]><%= stylesheet_link_tag 'ie' %><![endif]-->
 	<!--[if lt IE 8]><%= stylesheet_link_tag 'ie8' %><![endif]-->
 	<!--[if IE]>
@@ -23,10 +24,20 @@
 			<tr>
 				<td class="container">
 					<div id="container">
-						<div class="right">	
-							<%= yield :layout %>
-						</div>
-
+						<table cellspacing="0" class="content">
+							<tbody>
+								<tr>
+									<td class="title">
+										<%= link_to image_tag("title.png", :border=>0, :alt => "I Just Wanna Say it"), root_path %>
+									</td>
+									<td>
+										<div class="right">	
+											<%= yield :layout %>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</td>
 				<td class="sidebar"><%= render :partial => 'sidebar' %></td>

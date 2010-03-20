@@ -23,14 +23,18 @@ class Text2speech
   
   def self.find_via_hash(hash)
      id = BaseCoder::decode(hash)
-     all(:uid=> id).first
+     all(:uid => id).first
    end
   
   private 
   
   def valid_text?
-    unless self.text.length <= 100
+    unless self.text.length > 0 && self.text.length <= 100
       errors.add(:text, "must have at most 100 words.")
+    end
+    
+    if ProfanityFilter::Base.profane?(self.text)
+      errors.add(:text, "contains profanity word(s).")
     end
   end
   

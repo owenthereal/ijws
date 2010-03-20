@@ -19,12 +19,24 @@ body
 	height: 610px; 
 	margin: 20px 0 0 0; 
 	color: #343434; 
-} 
+}
+
+#container .content .title
+{
+	vertical-align: top;
+	padding: 0 0 0 60px;
+}
 
 #container .right
 {
 	float: right;
 	width: 510px;
+}
+
+#container .content
+{
+	width: 100%;
+	margin: 0;
 }
 
 #container .right .bubble
@@ -178,7 +190,7 @@ span.small
 }
 
 #container .urlForm {
-	padding: 120px 0 0 0;
+	padding: 130px 0 0 30px;
 }
 
 #container .urlForm .link{
