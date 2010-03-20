@@ -45182,3 +45182,32 @@ Rendering text2speeches/new
 Rendered text2speeches/_form (2.9ms)
 Rendered text2speeches/_sidebar (6.5ms)
 Completed in 31ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-20 00:15:57) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (100.7ms)
+Rendered text2speeches/_sidebar (36.6ms)
+Completed in 323ms (View: 157 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-20 00:16:02) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"lSL2XLDxW1Dnv02YqK1VqT914G0S+BJLBaBu5RB1HJE=", "text2speech"=>{"text"=>"hello world"}}
+Redirected to http://localhost:3000/CPD
+Completed in 926ms | 302 Found [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-20 00:16:03) [GET]
+  Parameters: {"hash"=>"CPD"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (1.7ms)
+Rendered text2speeches/_sidebar (5.7ms)
+Completed in 33ms (View: 18 | 200 OK [http://localhost/CPD]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-20 00:16:04) [GET]
+  Parameters: {"id"=>"4ba4763239d10e1d81000002"}
+Sending data text2speech/speech/4ba4763239d10e1d81000002
+Completed in 226ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba4763239d10e1d81000002]
