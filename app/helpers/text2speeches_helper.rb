@@ -32,7 +32,7 @@ module Text2speechesHelper
   end
   
   def geo_location(text2speech)
-    if text2speech.geo_address.nil?
+    if text2speech.geo_address.blank?
       ""
     else
       "from " + text2speech.geo_address
