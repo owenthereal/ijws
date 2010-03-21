@@ -45264,3 +45264,160 @@ ActionController::RoutingError (No route matches "/voice/4b754a19fe4f83244d00000
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-21 00:52:14) [GET]
+
+NoMethodError (undefined method `has_geo_location' for Text2speech:Class):
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/support/find.rb:72:in `method_missing'
+  app/models/text2speech.rb:12
+  app/controllers/text2speeches_controller.rb:17:in `new'
+
+Rendered rescues/_trace (89.6ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-21 00:52:25) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (100.8ms)
+Rendered text2speeches/_sidebar (31.8ms)
+Completed in 165ms (View: 153 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-21 00:52:29) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"lSL2XLDxW1Dnv02YqK1VqT914G0S+BJLBaBu5RB1HJE=", "text2speech"=>{"text"=>"hello world"}}
+
+NoMethodError (undefined method `geo_ip=' for #<Text2speech:0x10421d748>):
+  vendor/gems/mongo_mapper-0.7.0/lib/mongo_mapper/plugins/dirty.rb:25:in `method_missing'
+  app/controllers/text2speeches_controller.rb:26:in `create'
+
+Rendered rescues/_trace (27.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-21 00:53:01) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"lSL2XLDxW1Dnv02YqK1VqT914G0S+BJLBaBu5RB1HJE=", "text2speech"=>{"text"=>"hello world"}}
+Redirected to http://localhost:3000/onZ
+Completed in 80ms | 302 Found [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-21 00:53:01) [GET]
+  Parameters: {"hash"=>"onZ"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (2.2ms)
+Rendered text2speeches/_sidebar (5.0ms)
+Completed in 36ms (View: 21 | 200 OK [http://localhost/onZ]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-21 00:53:02) [GET]
+  Parameters: {"id"=>"4ba5d05d39d10e2d09000003"}
+Sending data text2speech/speech/4ba5d05d39d10e2d09000003
+Completed in 188ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba5d05d39d10e2d09000003]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-21 00:53:04) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_sidebar (62.7ms)
+Completed in 84ms (View: 69 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-21 00:53:09) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"lSL2XLDxW1Dnv02YqK1VqT914G0S+BJLBaBu5RB1HJE=", "text2speech"=>{"text"=>"hey hey"}}
+Redirected to http://localhost:3000/hL3
+Completed in 18ms | 302 Found [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-21 00:53:09) [GET]
+  Parameters: {"hash"=>"hL3"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 24ms (View: 10 | 200 OK [http://localhost/hL3]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-21 00:53:09) [GET]
+  Parameters: {"id"=>"4ba5d06539d10e2d09000005"}
+Sending data text2speech/speech/4ba5d06539d10e2d09000005
+Completed in 103ms (View: 0 | 200 OK [http://localhost/text2speeches/speech/4ba5d06539d10e2d09000005]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-21 00:53:11) [GET]
+  Parameters: {"hash"=>"onZ"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.5ms)
+Rendered text2speeches/_sidebar (5.0ms)
+Completed in 26ms (View: 12 | 200 OK [http://localhost/onZ]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-21 00:53:11) [GET]
+  Parameters: {"id"=>"4ba5d05d39d10e2d09000003"}
+Sending data text2speech/speech/4ba5d05d39d10e2d09000003
+Completed in 175ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba5d05d39d10e2d09000003]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-21 00:53:13) [GET]
+  Parameters: {"hash"=>"TxT"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.0ms)
+Completed in 25ms (View: 10 | 200 OK [http://localhost/TxT]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-21 00:53:13) [GET]
+  Parameters: {"id"=>"4ba4778c39d10e1db8000002"}
+Sending data text2speech/speech/4ba4778c39d10e1db8000002
+Completed in 104ms (View: 0 | 200 OK [http://localhost/text2speeches/speech/4ba4778c39d10e1db8000002]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-21 00:53:14) [GET]
+  Parameters: {"hash"=>"CPD"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (4.7ms)
+Completed in 26ms (View: 9 | 200 OK [http://localhost/CPD]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-21 00:53:15) [GET]
+  Parameters: {"id"=>"4ba4763239d10e1d81000002"}
+Sending data text2speech/speech/4ba4763239d10e1d81000002
+Completed in 237ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba4763239d10e1d81000002]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-21 00:53:16) [GET]
+  Parameters: {"hash"=>"LEx"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.0ms)
+Completed in 29ms (View: 12 | 200 OK [http://localhost/LEx]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-21 00:53:16) [GET]
+  Parameters: {"id"=>"4ba41c2239d10e047500006e"}
+Sending data text2speech/speech/4ba41c2239d10e047500006e
+Completed in 204ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba41c2239d10e047500006e]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-21 00:53:19) [GET]
+  Parameters: {"hash"=>"HcX"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (6.3ms)
+Completed in 29ms (View: 11 | 200 OK [http://localhost/HcX]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-21 00:53:19) [GET]
+  Parameters: {"id"=>"4ba41a3539d10e047500005b"}
+Sending data text2speech/speech/4ba41a3539d10e047500005b
+Completed in 209ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba41a3539d10e047500005b]

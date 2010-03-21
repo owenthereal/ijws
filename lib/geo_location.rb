@@ -10,7 +10,7 @@ module GeoLocation
       write_inheritable_attribute(:geo_location_definitions, {}) if geo_location_definitions.nil?
       geo_location_definitions[:name] = name
       
-      before_save :retrive_location
+      # before_save :retrive_location
 
       key "#{name}_ip".to_sym, String, :required => true
       key "#{name}_lat".to_sym, Float
