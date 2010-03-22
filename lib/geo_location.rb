@@ -25,7 +25,12 @@ module GeoLocation
 
   def retrive_location
     name = self.class.geo_location_definitions[:name]
-    ip = get_ip
+    if (ENV['RAILS_ENV'] == 'production')
+      ip = self["#{name}_ip"]
+    else
+      ip = '128.189.211.230'
+    end
+    
     geo_loc = Geokit::Geocoders::MultiGeocoder.geocode(ip)
 
     if geo_loc.success
@@ -34,16 +39,6 @@ module GeoLocation
 
       res = Geokit::Geocoders::MultiGeocoder.reverse_geocode([geo_loc.lat, geo_loc.lng])
       self["#{name}_address"] = res.full_address
-    end
-  end
-
-  private 
-
-  def get_ip
-    if (ENV['RAILS_ENV'] == 'production')
-      self["#{name}_ip"]
-    else
-      '128.189.211.230'
     end
   end
 end
