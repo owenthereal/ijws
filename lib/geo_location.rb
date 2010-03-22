@@ -9,7 +9,7 @@ module GeoLocation
     def has_geo_location(name)
       write_inheritable_attribute(:geo_location_definitions, {}) if geo_location_definitions.nil?
       geo_location_definitions[:name] = name
-      
+
       # before_save :retrive_location
 
       key "#{name}_ip".to_sym, String, :required => true
@@ -17,7 +17,7 @@ module GeoLocation
       key "#{name}_lng".to_sym, Float
       key "#{name}_address".to_sym, String
     end
-    
+
     def geo_location_definitions
       read_inheritable_attribute(:geo_location_definitions)
     end
@@ -28,10 +28,14 @@ module GeoLocation
     ip = '128.189.211.230' if (self["#{name}_ip"].nil? || self["#{name}_ip"].eql?('127.0.0.1'))
     geo_loc = Geokit::Geocoders::MultiGeocoder.geocode(ip)
 
-    self["#{name}_lat"] = geo_loc.lat
-    self["#{name}_lng"] = geo_loc.lng
+    if geo_loc.success
+      self["#{name}_lat"] = geo_loc.lat
+      self["#{name}_lng"] = geo_loc.lng
 
-    res = Geokit::Geocoders::MultiGeocoder.reverse_geocode([geo_loc.lat, geo_loc.lng])
-    self["#{name}_address"] = res.full_address
+      res = Geokit::Geocoders::MultiGeocoder.reverse_geocode([geo_loc.lat, geo_loc.lng])
+      self["#{name}_address"] = res.full_address
+    else
+      puts "failed"
+    end
   end
 end
