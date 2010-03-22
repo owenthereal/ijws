@@ -45421,3 +45421,57 @@ Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-21 00:53:19)
   Parameters: {"id"=>"4ba41a3539d10e047500005b"}
 Sending data text2speech/speech/4ba41a3539d10e047500005b
 Completed in 209ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba41a3539d10e047500005b]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-21 11:15:30) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (117.3ms)
+Rendered text2speeches/_sidebar (37.7ms)
+Completed in 349ms (View: 177 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-21 11:15:32) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_sidebar (5.0ms)
+Completed in 25ms (View: 11 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-21 11:15:34) [GET]
+  Parameters: {"hash"=>"onZ"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (1.5ms)
+Rendered text2speeches/_sidebar (4.9ms)
+Completed in 82ms (View: 17 | 200 OK [http://localhost/onZ]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-21 11:15:35) [GET]
+  Parameters: {"id"=>"4ba5d05d39d10e2d09000003"}
+Sending data text2speech/speech/4ba5d05d39d10e2d09000003
+Completed in 194ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba5d05d39d10e2d09000003]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-21 20:32:10) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (103.3ms)
+Rendered text2speeches/_sidebar (36.3ms)
+Completed in 323ms (View: 160 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-21 20:32:12) [GET]
+  Parameters: {"hash"=>"onZ"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (1.5ms)
+Rendered text2speeches/_sidebar (5.0ms)
+Completed in 32ms (View: 17 | 200 OK [http://localhost/onZ]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-21 20:32:12) [GET]
+  Parameters: {"id"=>"4ba5d05d39d10e2d09000003"}
+Sending data text2speech/speech/4ba5d05d39d10e2d09000003
+Completed in 205ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba5d05d39d10e2d09000003]
