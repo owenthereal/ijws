@@ -45475,3 +45475,62 @@ Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-21 20:32:12)
   Parameters: {"id"=>"4ba5d05d39d10e2d09000003"}
 Sending data text2speech/speech/4ba5d05d39d10e2d09000003
 Completed in 205ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba5d05d39d10e2d09000003]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-21 21:18:17) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (153.8ms)
+Rendered text2speeches/_sidebar (27.1ms)
+Completed in 376ms (View: 200 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#create (for 127.0.0.1 at 2010-03-21 21:18:23) [POST]
+  Parameters: {"commit"=>"say", "authenticity_token"=>"lSL2XLDxW1Dnv02YqK1VqT914G0S+BJLBaBu5RB1HJE=", "text2speech"=>{"text"=>"hey yo"}}
+Redirected to http://localhost:3000/11PX
+Completed in 784ms | 302 Found [http://localhost/text2speeches]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-21 21:18:24) [GET]
+  Parameters: {"hash"=>"11PX"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (1.5ms)
+Rendered text2speeches/_sidebar (5.6ms)
+Completed in 33ms (View: 17 | 200 OK [http://localhost/11PX]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-21 21:18:25) [GET]
+  Parameters: {"id"=>"4ba6ef8f39d10e45f7000002"}
+Sending data text2speech/speech/4ba6ef8f39d10e45f7000002
+Completed in 149ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba6ef8f39d10e45f7000002]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-21 21:18:30) [GET]
+  Parameters: {"hash"=>"TxT"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 89ms (View: 10 | 200 OK [http://localhost/TxT]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-21 21:18:31) [GET]
+  Parameters: {"id"=>"4ba4778c39d10e1db8000002"}
+Sending data text2speech/speech/4ba4778c39d10e1db8000002
+Completed in 100ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba4778c39d10e1db8000002]
+
+
+Processing Text2speechesController#show (for 127.0.0.1 at 2010-03-21 21:18:32) [GET]
+  Parameters: {"hash"=>"11PX"}
+Rendering template within layouts/application
+Rendering text2speeches/show
+Rendered text2speeches/_sexybookmarks (0.4ms)
+Rendered text2speeches/_sidebar (6.6ms)
+Completed in 27ms (View: 11 | 200 OK [http://localhost/11PX]
+
+
+Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-21 21:18:32) [GET]
+  Parameters: {"id"=>"4ba6ef8f39d10e45f7000002"}
+Sending data text2speech/speech/4ba6ef8f39d10e45f7000002
+Completed in 90ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba6ef8f39d10e45f7000002]
