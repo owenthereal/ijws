@@ -45534,3 +45534,43 @@ Processing Text2speechesController#speech (for 127.0.0.1 at 2010-03-21 21:18:32)
   Parameters: {"id"=>"4ba6ef8f39d10e45f7000002"}
 Sending data text2speech/speech/4ba6ef8f39d10e45f7000002
 Completed in 90ms (View: 1 | 200 OK [http://localhost/text2speeches/speech/4ba6ef8f39d10e45f7000002]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-25 13:43:46) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (114.5ms)
+Rendered text2speeches/_sidebar (38.7ms)
+Completed in 474ms (View: 176 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-25 13:43:49) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.8ms)
+Rendered text2speeches/_sidebar (5.1ms)
+Completed in 26ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-25 13:44:06) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_sidebar (63.7ms)
+Completed in 93ms (View: 70 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-25 13:44:50) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_sidebar (5.1ms)
+Completed in 30ms (View: 15 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-03-25 13:46:08) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_sidebar (5.4ms)
+Completed in 29ms (View: 15 | 200 OK [http://localhost/]
