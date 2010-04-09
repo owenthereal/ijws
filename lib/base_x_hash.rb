@@ -15,6 +15,11 @@ module BaseXHash
       end
     end
 
+    def find_via_hash(hash)
+      id = BaseCoder::decode(hash)
+      all(:uid => id).first
+    end
+
     def base_definitions
       read_inheritable_attribute(:base_definitions)
     end 

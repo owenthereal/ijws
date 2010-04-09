@@ -9,16 +9,17 @@ module Text2speechesHelper
     "/text2speeches/speech/#{text2speech.id}"
   end
 
-  def recent_text2speeches()
-    Text2speech.all(:order => 'created_at desc', :limit => 6)
-  end
-
   def text2speech_url(text2speech)
     URI::HTTP.build(:host => request.host, :port => request.port, :path => "/#{text2speech.uid_hash}").to_s
   end
-  
+
   def share_content(text2speech)
     "I just wanna say..." + text2speech_url(text2speech)
+  end
+
+  def timeline_pagination(page)
+    # pager_links  = link_to("Prev", :controller => "text2speeches", :action => "timeline", :page => page.previous_page) if !page.previous_page.nil?
+    pager_links  = link_to("Next", :controller => "text2speeches", :action => "timeline", :page => page.next_page) if !page.next_page.nil?
   end
 
   def trim_text(text, number_of_words)
@@ -30,13 +31,9 @@ module Text2speechesHelper
       text.match(/#{reg_exp}/)[0] + '...'
     end
   end
-  
+
   def geo_location(text2speech)
-    if text2speech.geo_address.blank?
-      ""
-    else
-      "from " + text2speech.geo_address
-    end
+    text2speech.geo_address.blank?? "" : "from " + text2speech.geo_address
   end
 end
 

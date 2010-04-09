@@ -1,0 +1,31 @@
+<ul class="statuses">
+<% @recent_speeches.each do |text2speech|-%>
+<li>
+	<div class="tweetTxt">
+		<strong><%= link_to h(trim_text(text2speech.text, 10)), text2speech.uid_hash %></strong>
+		<div class="date"><%= time_ago_in_words text2speech.created_at %> ago <%= geo_location text2speech %></div>
+	</div>
+	<div class="clear"></div>
+</li>
+<% end-%>
+</ul>
+<div class="pages">
+	<ul id="pagination">
+		<% if @recent_speeches.previous_page.nil? %>
+		<li class="previous-off">&laquo; Previous</li>
+		<% else %>
+		<li class="previous">
+			<%= link_to("&laquo; Previous", :controller => "text2speeches", :action => "timeline", :page => @recent_speeches.previous_page)%>
+		</li>
+		<% end %>
+
+
+		<% if @recent_speeches.next_page.nil? %>
+		<li class="previous-off">Next &raquo;</li>
+		<% else %>
+		<li class="previous">
+			<%= link_to("Next &raquo;", :controller => "text2speeches", :action => "timeline", :page => @recent_speeches.next_page)%>
+		</li>
+		<% end %>
+	</ul>
+</div>

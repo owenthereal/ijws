@@ -1,30 +1,36 @@
 class Text2speechesController < ApplicationController 
+  before_filter :retrive_recent_speeches
+
   def index
     redirect_to root_path
   end
-  
+
   def show
-    @text2speech = Text2speech.find_via_hash(params[:hash]) 
+    @text2speech = Text2speech.find_via_hash(params[:hash])
   end
-  
+
+  def timeline
+    retrive_recent_speeches(params[:page])
+  end
+
   def speech
-     @text2speech = Text2speech.find(params[:id])
-     @text2speech.generate_default_speech if @text2speech.speech_path.nil?
-     send_data @text2speech.speech, :type => @text2speech.speech_content_type, :filename => @text2speech.speech_path, :disposition => 'inline'
+    @text2speech = Text2speech.find(params[:id])
+    @text2speech.generate_default_speech if @text2speech.speech_path.nil?
+    send_data @text2speech.speech, :type => @text2speech.speech_content_type, :filename => @text2speech.speech_path, :disposition => 'inline'
   end
-  
+
   def new
     @text2speech = Text2speech.new
   end
-  
+
   def say
     puts request.query_string
   end
-  
+
   def create
     @text2speech = Text2speech.new(params[:text2speech])
     @text2speech.geo_ip = request.remote_ip
-     
+
     if @text2speech.save
       flash[:notice] = "Successfully created speech."
       redirect_to "/#{@text2speech.uid_hash}"
@@ -32,13 +38,17 @@ class Text2speechesController < ApplicationController
       render :action => 'new'
     end
   end
-  
+
   private
-  
+
+  def retrive_recent_speeches(page = 1)
+    @recent_speeches = Text2speech.paginate(:per_page => 6, :page => page, :order => 'created_at desc')
+  end
+
   # def load_speech_timeline
   #    @speech_timeline = Speech.all(:order => 'created_date desc', :limit => 5)
   #  end
-  
+
   # def edit
   #    @speech = Speech.find(params[:id])
   #  end

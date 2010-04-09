@@ -1,15 +1,17 @@
 function embedSWF(container_id, text2speech_url, autostart) {
 	var flashvars  = {
-		"file": text2speech_url,
-		"autostart": autostart,
-		"provider": "sound",
-		"bufferlength": "0",
+		file: text2speech_url,
+		autostart: autostart,
+		provider: "sound",
+		bufferlength: "0",
 	};
 	var params     = {
-		"allowscriptaccess": "always" 
+		allowscriptaccess: "always" 
 	};
 
 	var attributes = {
+		id: text2speech_url,
+	  	name: text2speech_url
 	};
 
 	swfobject.embedSWF("/flash/player.swf", 

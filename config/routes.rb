@@ -19,7 +19,7 @@ ActionController::Routing::Routes.draw do |map|
 
   # Sample resource route with sub-resources:
   #   map.resources :products, :has_many => [ :comments, :sales ], :has_one => :seller
-  
+
   # Sample resource route with more complex sub-resources
   #   map.resources :products do |products|
   #     products.resources :comments
@@ -34,19 +34,26 @@ ActionController::Routing::Routes.draw do |map|
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
   map.root :controller => "text2speeches",
-           :action => "new"
+  :action => "new"
 
   # See how all your routes lay out with "rake routes"
 
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing or commenting them out if you're using named routes and resources.
-  
-  map.connect ':hash',
-               :controller => "text2speeches",
-               :action => "show"
-                           
+  # map.connect 'timeline/:page', :controller => "text2speeches", :action => "timeline", :page => /\d+/
+
+  map.with_options :controller => 'text2speeches' do |time2speech|
+    time2speech.show  ':hash',  :action  => 'show'
+    time2speech.timeline  'timeline/:page',  :action  => 'timeline'
+  end
+
+  # map.connect ':hash',
+  #   :controller => "text2speeches",
+  #   :action => "show"
+
+
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
-  
+
 end
