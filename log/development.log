@@ -53884,3 +53884,59 @@ Rendering text2speeches/timeline
 Rendered text2speeches/_timeline_content (2.5ms)
 Rendered text2speeches/_timeline_control (0.3ms)
 Completed in 117ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:26:55) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (44.1ms)
+Rendered text2speeches/_timeline_content (27.0ms)
+Rendered text2speeches/_timeline_control (1.3ms)
+Rendered text2speeches/_sidebar (85.2ms)
+Completed in 233ms (View: 150 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:26:58) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 30ms (View: 8 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:26:59) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:27:50) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (4.2ms)
+Completed in 89ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:27:52) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (3.4ms)
+Completed in 28ms (View: 10 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:27:53) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.2ms)
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (3.5ms)
+Completed in 27ms (View: 9 | 200 OK [http://localhost/]
