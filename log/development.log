@@ -52838,3 +52838,1049 @@ Rendering text2speeches/timeline
 Rendered text2speeches/_timeline_content (2.5ms)
 Rendered text2speeches/_timeline_control (0.3ms)
 Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/3]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 13:52:17) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (47.6ms)
+Rendered text2speeches/_timeline_content (29.8ms)
+Rendered text2speeches/_timeline_control (1.8ms)
+Rendered text2speeches/_sidebar (88.2ms)
+Completed in 258ms (View: 157 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 13:52:58) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (4.7ms)
+Completed in 33ms (View: 14 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 13:53:00) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 30ms (View: 8 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 13:53:00) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 13:54:03) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_timeline_content (2.9ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (4.5ms)
+Completed in 33ms (View: 14 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 13:54:04) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 13:54:05) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 84ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 13:55:31) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (4.0ms)
+Completed in 31ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 13:55:33) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 13:55:34) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.3ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 13:55:42) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (4.0ms)
+Completed in 33ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 13:55:43) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 13:55:44) [GET]
+  Parameters: {"page"=>"3"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/3]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 13:55:45) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 84ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 13:55:46) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 26ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 13:56:30) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (3.7ms)
+Completed in 30ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 13:56:43) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_timeline_content (3.0ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (84.3ms)
+Completed in 126ms (View: 94 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 13:56:51) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (3.7ms)
+Completed in 31ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 13:57:05) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (3.8ms)
+Completed in 30ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 13:57:06) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 26ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 13:57:07) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 26ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 13:57:08) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 13:57:08) [GET]
+  Parameters: {"page"=>"3"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 26ms (View: 4 | 200 OK [http://localhost/timeline/3]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:00:19) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (4.0ms)
+Completed in 97ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:00:21) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:00:22) [GET]
+  Parameters: {"page"=>"3"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/3]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:01:26) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (65.3ms)
+Rendered text2speeches/_timeline_content (2.8ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Rendered text2speeches/_sidebar (4.4ms)
+Completed in 94ms (View: 76 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:01:27) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:01:28) [GET]
+  Parameters: {"page"=>"3"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/3]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:01:36) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (3.9ms)
+Completed in 30ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:01:38) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 26ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:01:39) [GET]
+  Parameters: {"page"=>"3"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/3]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:01:40) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.7ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 30ms (View: 5 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:01:41) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 86ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:01:42) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:01:43) [GET]
+  Parameters: {"page"=>"3"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 26ms (View: 4 | 200 OK [http://localhost/timeline/3]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:01:44) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 28ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:01:45) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:02:06) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (4.0ms)
+Completed in 31ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:02:08) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_timeline_content (2.7ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (3.7ms)
+Completed in 28ms (View: 10 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:02:09) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (64.4ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 88ms (View: 66 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:02:10) [GET]
+  Parameters: {"page"=>"3"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 26ms (View: 5 | 200 OK [http://localhost/timeline/3]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:02:11) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 26ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:02:12) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.3ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:02:13) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 26ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:02:14) [GET]
+  Parameters: {"page"=>"3"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 26ms (View: 4 | 200 OK [http://localhost/timeline/3]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:02:15) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 26ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:02:16) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.3ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:03:40) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_timeline_content (2.9ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (4.3ms)
+Completed in 32ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:03:41) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 26ms (View: 5 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:03:42) [GET]
+  Parameters: {"page"=>"3"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 27ms (View: 4 | 200 OK [http://localhost/timeline/3]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:03:43) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:03:44) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 99ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:03:51) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 26ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:03:52) [GET]
+  Parameters: {"page"=>"3"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 26ms (View: 5 | 200 OK [http://localhost/timeline/3]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:05:40) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (4.0ms)
+Completed in 32ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:05:42) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.7ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 93ms (View: 5 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:05:43) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 26ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:06:14) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_timeline_content (2.7ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (4.2ms)
+Completed in 32ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:07:09) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.7ms)
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (4.1ms)
+Completed in 103ms (View: 14 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:07:34) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (3.8ms)
+Completed in 31ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:08:15) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.6ms)
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (5.3ms)
+Completed in 35ms (View: 16 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:09:17) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (3.9ms)
+Completed in 32ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:13:37) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Rendered text2speeches/_sidebar (4.1ms)
+Completed in 32ms (View: 14 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:13:39) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 92ms (View: 5 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:13:40) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 26ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:13:48) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (3.8ms)
+Completed in 31ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:13:49) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 26ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:13:50) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 26ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:14:16) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.6ms)
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (4.0ms)
+Completed in 31ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:14:18) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 25ms (View: 5 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:14:19) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 94ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:14:20) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (3.6ms)
+Completed in 29ms (View: 10 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:14:31) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (3.8ms)
+Completed in 31ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:14:32) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (3.5ms)
+Completed in 98ms (View: 10 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:14:53) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (4.0ms)
+Completed in 32ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:15:03) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:15:04) [GET]
+  Parameters: {"page"=>"3"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.8ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 98ms (View: 5 | 200 OK [http://localhost/timeline/3]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:15:05) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 26ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:15:06) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:15:33) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (4.0ms)
+Completed in 30ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:15:34) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_timeline_content (2.7ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (3.6ms)
+Completed in 29ms (View: 10 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:15:35) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (3.3ms)
+Completed in 28ms (View: 9 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:15:51) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:15:54) [GET]
+  Parameters: {"page"=>"3"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/3]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:15:55) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 26ms (View: 5 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:15:55) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 26ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:18:37) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Rendered text2speeches/_sidebar (79.2ms)
+Completed in 106ms (View: 88 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:19:57) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_timeline_content (3.6ms)
+Rendered text2speeches/_timeline_control (0.6ms)
+Rendered text2speeches/_sidebar (5.4ms)
+Completed in 36ms (View: 14 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:19:59) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (3.3ms)
+Completed in 28ms (View: 9 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:21:44) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.5ms)
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (3.6ms)
+Completed in 100ms (View: 10 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:22:07) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.6ms)
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (3.9ms)
+Completed in 32ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:22:12) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 26ms (View: 5 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:22:14) [GET]
+  Parameters: {"page"=>"3"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 129ms (View: 4 | 200 OK [http://localhost/timeline/3]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:22:15) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 30ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:22:15) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.3ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 29ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:22:17) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 30ms (View: 5 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:22:18) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 117ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:22:19) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.5ms)
+Completed in 29ms (View: 5 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:22:20) [GET]
+  Parameters: {"page"=>"3"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 29ms (View: 4 | 200 OK [http://localhost/timeline/3]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:22:21) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.5ms)
+Completed in 30ms (View: 5 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:22:22) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 117ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:22:37) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.4ms)
+Rendered text2speeches/_timeline_content (2.8ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (4.3ms)
+Completed in 32ms (View: 13 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:22:38) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:22:39) [GET]
+  Parameters: {"page"=>"3"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.7ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 29ms (View: 5 | 200 OK [http://localhost/timeline/3]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:22:41) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 121ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:22:42) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 31ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:22:47) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (3.8ms)
+Completed in 30ms (View: 12 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:22:48) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.5ms)
+Completed in 115ms (View: 5 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:22:49) [GET]
+  Parameters: {"page"=>"3"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.8ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 26ms (View: 5 | 200 OK [http://localhost/timeline/3]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:22:50) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.4ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:22:51) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 26ms (View: 4 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:22:54) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.6ms)
+Completed in 117ms (View: 96 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:22:54) [GET]
+  Parameters: {"page"=>"3"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.7ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 26ms (View: 5 | 200 OK [http://localhost/timeline/3]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:22:55) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 26ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:22:56) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 29ms (View: 5 | 200 OK [http://localhost/timeline/1]
+
+
+Processing Text2speechesController#new (for 127.0.0.1 at 2010-04-11 14:23:16) [GET]
+Rendering template within layouts/application
+Rendering text2speeches/new
+Rendered text2speeches/_form (2.3ms)
+Rendered text2speeches/_timeline_content (97.2ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Rendered text2speeches/_sidebar (99.4ms)
+Completed in 127ms (View: 108 | 200 OK [http://localhost/]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:23:19) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 26ms (View: 5 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:23:20) [GET]
+  Parameters: {"page"=>"3"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.6ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 26ms (View: 4 | 200 OK [http://localhost/timeline/3]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:23:21) [GET]
+  Parameters: {"page"=>"2"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.4ms)
+Completed in 25ms (View: 4 | 200 OK [http://localhost/timeline/2]
+
+
+Processing Text2speechesController#timeline (for 127.0.0.1 at 2010-04-11 14:23:21) [GET]
+  Parameters: {"page"=>"1"}
+Rendering text2speeches/timeline
+Rendered text2speeches/_timeline_content (2.5ms)
+Rendered text2speeches/_timeline_control (0.3ms)
+Completed in 117ms (View: 4 | 200 OK [http://localhost/timeline/1]
