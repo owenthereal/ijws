@@ -1,1 +1,2 @@
-$('#timeline').html("<%= escape_javascript(render("timeline")) %>");  
+$('#timeline-content').hide().html("<%= escape_javascript(render("timeline_content")) %>").fadeIn('slow'); 
+$('#timeline-control').html("<%= escape_javascript(render("timeline_control")) %>") 

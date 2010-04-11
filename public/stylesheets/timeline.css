@@ -1,0 +1,103 @@
+#timeline-content {
+	margin: 0;
+}
+
+#timeline-content li {
+	position: relative;
+	border-bottom: 1px dashed #C0DEED;
+	padding: 15px 15px 15px 10px;
+	list-style: none;
+	font-size: 14px;
+}
+
+#timeline-content li a, 
+#timeline-content li a:visited {
+	color: #007bc4;
+	text-decoration: none;
+	outline: none;
+}
+
+#timeline-content li a:hover {
+	text-decoration: underline;
+}
+
+div.entry {
+	float: left;
+	overflow: hidden;
+	word-wrap: break-word;
+}
+
+div.date {
+	line-height: 18px;
+	font-size: 10px;
+	color: #999999;
+}
+
+.clear {
+	clear: both;
+}
+
+#timeline-control {
+	margin: 10px auto;
+	display: table;
+	padding: 2px auto;
+	white-space: nowrap;
+}
+
+#timeline-control ul {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#timeline-control li {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 11px;
+	list-style: none;
+	float: left;
+}
+
+#timeline-control a {
+	border: solid 1px #9aafe5;
+	margin-right: 2px;
+}
+
+#timeline-control a:link, 
+#timeline-control a:visited {
+	color: #0e509e;
+	display: block;
+	float: left;
+	padding: 3px 6px;
+	text-decoration: none;
+}
+
+#timeline-control a:hover {
+	border: solid 1px #0e509e;
+}
+
+#timeline-control .previous-off,
+#timeline-control .next-off {
+	border: solid 1px #DEDEDE;
+	color: #888888;
+	display: block;
+	float: left;
+	font-weight: bold;
+	margin-right: 2px;
+	padding: 3px 4px;
+}
+
+#timeline-control .next a,
+#timeline-control .previous a {
+	font-weight: bold;
+}
+
+#timeline-control .active {
+	background: #2e6ab1;
+	color: #FFFFFF;
+	font-weight: bold;
+	display: block;
+	float: left;
+	padding: 4px 6px; /* savers */ margin-right:2px;
+}

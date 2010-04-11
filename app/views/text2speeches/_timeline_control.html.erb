@@ -1,16 +1,5 @@
-<ul class="statuses">
-<% @recent_speeches.each do |text2speech|-%>
-<li>
-	<div class="tweetTxt">
-		<strong><%= link_to h(trim_text(text2speech.text, 10)), text2speech.uid_hash %></strong>
-		<div class="date"><%= time_ago_in_words text2speech.created_at %> ago <%= geo_location text2speech %></div>
-	</div>
-	<div class="clear"></div>
-</li>
-<% end-%>
-</ul>
-<div class="pages">
-	<ul id="pagination">
+<div id="timeline-control">
+	<ul>
 		<% if @recent_speeches.previous_page.nil? %>
 		<li class="previous-off">&laquo; Previous</li>
 		<% else %>

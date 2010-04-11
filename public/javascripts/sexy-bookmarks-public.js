@@ -114,6 +114,9 @@ jQuery(document).ready(function() {
 			case 'sexy-google':
 				this.href += '?op=add&title=' + document.title + '&bkmk=' + url;
 				break;
+			case 'sexy-friendfeed':
+				this.href += '?title=' + document.title + '&link=' + url;
+				break;
 		}
 	})
 });
