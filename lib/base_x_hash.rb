@@ -27,18 +27,17 @@ module BaseXHash
 end
 
 module BaseCoder
-  BASE62_CHARS =  %w{0 1 2 3 4 5 6 7 8 9 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z}
-  CHARS = BASE62_CHARS
-  BASE = CHARS.length
+  CHARS = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".split('')
+  BASE = 62
 
   def self.encode(value)
     s = []
-    while value > BASE
+    while value >= BASE
       value, rem = value.divmod(BASE)
       s << CHARS[rem]
     end
     s << CHARS[value]
-    s.reverse.to_s
+    s.reverse.join("")
   end
 
   def self.decode(str)
@@ -50,4 +49,3 @@ module BaseCoder
     total
   end
 end
-
